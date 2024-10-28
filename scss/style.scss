@@ -1,8 +1,23 @@
-*{
-    background-color:black;
-}
+//============================================
+//PARTIAL IMPORTS
+//============================================
+//UTILITIES :- VARIABLES, MIXINS AND FUNCTIONS
+@import 'utilities/_variables',
+        'utilities/_mixins',
+        'utilities/_functions';
 
-header{
-    color:#b00;
-    font-size:2.5em;
-}
+//BASE STYLES:- RESET AND BASE STYLES
+@import 'base/reset',
+        'base/base';
+
+//LAYOUT STYLES
+@import 'layout/containers',
+        'layout/header',
+        'layout/card',
+        'layout/footer';
+
+//COMPONENT STYLES
+@import 'components/nav',
+        'components/buttons',
+        'components/icons',
+        'components/images';
