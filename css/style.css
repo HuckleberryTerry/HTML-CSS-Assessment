@@ -7,6 +7,7 @@
  */
 /* Document
    ========================================================================== */
+@import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 html {
   font-family: sans-serif; /* 1 */
   line-height: 1.15; /* 2 */
@@ -420,6 +421,7 @@ ul, ol {
 
 body {
   margin: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 * {
@@ -456,20 +458,68 @@ body {
   background-color: #b00;
 }
 
+div {
+  display: block;
+}
+
 footer {
-  background-color: #323544;
   color: #fff;
-  padding: 30px 0 0;
   position: relative;
   margin-top: auto;
+  text-align: center;
+  text-decoration: none;
+  padding: 12px 22px 16px;
+  background-color: #212330;
+}
+@media (min-width: 768px) {
+  footer {
+    padding: 27px 0 0;
+  }
+}
+@media (min-width: 992px) {
+  footer {
+    padding: 27px 0 0;
+  }
+}
+@media (min-width: 1260px) {
+  footer {
+    padding: 47px 0 0;
+  }
 }
 footer .footer-row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: left;
+  position: relative;
+  flex-direction: column;
+}
+@media (min-width: 1260px) {
+  footer .footer-row {
+    flex-direction: row;
+  }
+}
+footer .footer-row .row {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+footer .footer-row .row:before {
+  content: "";
+  display: table;
+}
+footer .footer-row .row > * {
+  flex: 0 0 auto;
+  max-width: 100%;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 footer .footer-row .footer-menu {
   flex: 100%;
   margin-bottom: 30px;
+  position: relative;
 }
 @media (min-width: 768px) {
   footer .footer-row .footer-menu {
@@ -484,10 +534,30 @@ footer .footer-row .footer-menu {
 @media (min-width: 1260px) {
   footer .footer-row .footer-menu {
     margin-bottom: 40px;
+    flex-direction: row;
   }
 }
 footer .footer-row .footer-menu h4 {
   text-transform: uppercase;
   font-size: 1rem;
   margin-bottom: 26px;
+}
+footer .footer-row .footer-menu ul li a {
+  font-size: 0.8125rem;
+}
+footer .footer-row .footer-menu ul li a:link {
+  text-decoration: none;
+  color: #fff;
+}
+footer .footer-row .footer-menu ul li a:hover {
+  text-decoration: underline;
+}
+footer .footer-row .footer-menu ul li a:visited {
+  color: #fff;
+}
+footer .footer-row .footer-company-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 400px;
 }/*# sourceMappingURL=style.css.map */

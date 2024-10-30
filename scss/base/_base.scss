@@ -1,5 +1,9 @@
+//============================================
+//BASE STYLES
+//============================================
 body{
     margin:0;
+    font-family:'Poppins', sans-serif;
 }
 
 *{
@@ -31,4 +35,8 @@ body{
     flex-wrap: wrap;
     height:450px;
     background-color:#b00;
+}
+
+div{
+    display:block;
 }
