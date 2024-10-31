@@ -2,8 +2,9 @@
 //BASE STYLES
 //============================================
 body{
-    margin:0;
+    margin:0 auto;
     font-family:'Poppins', sans-serif;
+    letter-spacing:.4px;
 }
 
 *{
@@ -15,16 +16,18 @@ body{
     margin-left:auto;
     padding-left:15px;
     padding-right:15px;
-
-    @media (min-width: 768px){
+    @include mq('xs'){
+        width:749px;
+    }
+    @include mq('s'){
         width:750px;
     }
 
-    @media (min-width: 992px){
+    @include mq('m'){
         width:970px;
     }
 
-    @media (min-width: 1260px){
+    @include mq('l'){
         width:1200px;
     }
 }
@@ -33,7 +36,8 @@ body{
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height:450px;
+    height:50vh;
+    width:auto;
     background-color:#b00;
 }
 

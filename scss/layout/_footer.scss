@@ -10,12 +10,17 @@ footer{
     text-align: center;
     text-decoration: none;
     padding: 12px 22px 16px;
-    background-color: #212330;
+    background-color: $tuna;
+    width:auto;
+    @include mq('xs'){
+        padding:28px 0 0;
+        overflow:hidden;
+    }
     @include mq('s'){
-        padding:27px 0 0;
+        padding:28px 0 0;
     }
     @include mq('m'){
-        padding:27px 0 0;
+        padding:28px 0 0;
     }
     @include mq('l'){
         padding:47px 0 0;
@@ -23,6 +28,7 @@ footer{
     .footer-row{
         display:flex;
         flex-wrap:wrap;
+        align-content:left;
         justify-content:space-between;
         text-align:left;
         position:relative;
@@ -51,6 +57,13 @@ footer{
             flex:100%;
             margin-bottom:30px;
             position:relative;
+            // @include mq('xs'){
+            //     padding:0;
+            //     margin:0;
+            // }
+            @include mq('xs'){
+                width:100vw;
+            }
             @include mq('s'){
                 flex:50%;
             }
@@ -65,6 +78,8 @@ footer{
                 text-transform:uppercase;
                 font-size:1rem;
                 margin-bottom:26px;
+                margin-top:0;
+                font-weight:400;
             }
             ul li a{
                 font-size:px-to-rem(13);
@@ -84,9 +99,99 @@ footer{
             display:flex;
             flex-direction: row;
             flex-wrap: wrap;
-            width:400px;
-            .footer-info{
-                
+            justify-content:space-between;
+            width:auto;
+            .footer-logo{
+                &-img{
+                    width:320px;
+                }
+            }
+            h4{
+                font-weight:400;
+            }
+        }
+        .footer-social-logos{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            @include mq('xs'){
+                width:100vw;
+            }
+        }
+        .instagram:hover{
+            background-color:#d93175;
+        }
+        .twitter:hover{
+            background-color:#00aced;
+        }
+        .linkedin:hover{
+            background-color:#0077b5;
+        }
+        .facebook:hover{
+            background-color:#3b5998;
+        }
+        .btn{
+            text-align: center;
+            text-decoration: none;
+            font-size: 26px;
+            line-height: 26px;
+            padding: 12px 22px 16px;
+            background-color: #212330;
+            margin-right: 10px;
+            margin-bottom:10px;
+            &-primary{
+                @include mq('xs'){
+                    text-align: center;
+                    text-decoration: none;
+                    font-size: 26px;
+                    line-height: 26px;
+                    padding: 12px 22px 16px;
+                    background-color: #212330;
+                    color:white;
+                    margin-right: 10px;
+                    margin-bottom:10px;
+                }
+                @include mq('s'){
+                    text-align: center;
+                    text-decoration: none;
+                    font-size: 26px;
+                    line-height: 26px;
+                    padding: 12px 22px 16px;
+                    background-color: #212330;
+                    color:white;
+                    margin-right: 10px;
+                    margin-bottom:10px;
+                }
+                @include mq('m'){
+                    text-align: center;
+                    text-decoration: none;
+                    font-size: 26px;
+                    line-height: 26px;
+                    padding: 12px 22px 16px;
+                    background-color: #212330;
+                    color:white;
+                    margin-right: 10px;
+                    margin-bottom:10px;
+                }
+                @include mq('l'){
+                    text-align: center;
+                    text-decoration: none;
+                    font-size: 26px;
+                    line-height: 26px;
+                    padding: 12px 22px 16px;
+                    background-color: #212330;
+                    color:white;
+                    margin-right: 7px;
+                }
+            }
+        }
+        .icon{
+            &-facebook, 
+            &-instagram, 
+            &-linkedin2, 
+            &-twitter{
+                font-size:px-to-rem(26);
             }
         }
 
