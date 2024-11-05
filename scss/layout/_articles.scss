@@ -1,0 +1,17 @@
+#middle{
+    background-color:white;
+}
+
+.articles{
+    .heading-article{
+        &-more{
+            & strong{
+                color:#000 !important;
+            }
+
+            & a{
+                color:#000;
+            }
+        }
+    }
+}

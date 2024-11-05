@@ -1,0 +1,98 @@
+
+#banner{
+    color: #fff;
+    font-weight: 600;
+    & a{
+        color:#fff;
+        text-decoration:none;
+    }   
+    .container{
+        margin-right:auto;
+        margin-left:auto;
+        padding-right:15px;
+        padding-left:15px;
+        text-align:center;
+        .banner{
+            &-header {
+                position: absolute;
+                top: -125px;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                z-index: 4;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                overflow: hidden;
+                width:auto;
+                @include mq('s'){
+                    top: -200px;
+                }
+                @include mq('m'){
+                    top: -200px;
+                }
+            }
+            &-paragraph {
+                margin-bottom: .375rem;
+                font-size: 1.25rem;
+                line-height: 1.75rem;
+                font-weight: 600;
+                position: absolute;
+                top: 200px;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                z-index: 4;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                overflow: hidden;
+                width:auto;
+                @include mq('s'){
+                    top: -75px;
+                }
+                @include mq('m'){
+                    top: -75px;
+                }
+            }
+        }
+    }
+}
+.content{
+    position:relative;
+    .btn{
+        max-width:250px;
+        margin-left:auto;
+        margin-right:auto;
+        &-web{
+            background-color:#926fb1;  
+            height:50px;
+            padding: 5px 20px;
+            font-size: 1.25rem;
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+            font-weight: 600;
+            position: absolute;
+            top: 550px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 4;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            text-align:center;
+            @include mq('s'){
+                top:375px;
+            }
+            @include mq('m'){
+                top:350px;
+            }
+            @include mq('l'){
+                top:350px;
+            }
+        }
+    }
+}
