@@ -17,20 +17,22 @@ body{
     margin-left:auto;
     padding-left:15px;
     padding-right:15px;
-    @include mq('xs'){
-        width:749px;
-    }
-    @include mq('s'){
-        width:750px;
-    }
+    
+    // This needs changing as it is not part of the base styling.
+    // @include mq('xs'){
+    //     width:749px;
+    // }
+    // @include mq('s'){
+    //     width:750px;
+    // }
 
-    @include mq('m'){
-        width:970px;
-    }
+    // @include mq('m'){
+    //     width:970px;
+    // }
 
-    @include mq('l'){
-        width:1200px;
-    }
+    // @include mq('l'){
+    //     width:1200px;
+    // }
 }
 
 .filler{

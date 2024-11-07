@@ -1,0 +1,21 @@
+//Popout code
+
+.nav-popout ul li > a[class^="link-"] {
+  position: relative; 
+ 
+  &::after {
+    content: ""; 
+    position: absolute; 
+    bottom: -29px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    border-left: 67px solid transparent; 
+    border-right: 67px solid transparent; 
+    border-top: 30px solid ; 
+    display: none; 
+    z-index: 20;
+    @include mq ('l') {
+      border-left: 84px solid transparent; 
+      border-right: 84px solid transparent;
+    }
+  }

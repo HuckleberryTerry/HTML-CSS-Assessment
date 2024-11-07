@@ -34,6 +34,7 @@ footer{
         flex-direction:column;
         @include mq('l'){
             flex-direction:row;
+            justify-content:center;
         }
         .row{
             display:flex;
@@ -41,6 +42,9 @@ footer{
             position:relative;
             margin-left: -15px;
             margin-right: -15px;
+            @include mq('xs'){
+                margin:0;
+            }
             &:before{
                 content:"";
                 display:table;
@@ -56,10 +60,10 @@ footer{
             flex:100%;
             margin-bottom:30px;
             position:relative;
-            // @include mq('xs'){
-            //     padding:0;
-            //     margin:0;
-            // }
+            @include mq('xs'){
+                padding:0;
+                margin:0;
+            }
             @include mq('xs'){
                 width:100vw;
             }
@@ -79,6 +83,9 @@ footer{
                 margin-bottom:26px;
                 margin-top:0;
                 font-weight:400;
+                @include mq('xs'){
+                    margin-top:24px;
+                }
             }
             ul li{
                 line-height:px-to-rem(18);
@@ -111,6 +118,7 @@ footer{
                     width:320px;
                     @include mq('xs'){
                         width:250px;
+                        padding-bottom:24px;
                     }
                 }
             }
@@ -126,6 +134,7 @@ footer{
             margin-bottom: 30px;
             @include mq('xs'){
                 width:100vw;
+                padding-right:70px;
             }
         }
         .instagram:hover{
@@ -155,7 +164,7 @@ footer{
                     text-decoration: none;
                     font-size: 26px;
                     line-height: 26px;
-                    padding: 12px 22px 16px;
+                    padding: 12px 42px 16px;
                     background-color: #212330;
                     color:white;
                     margin-right: 10px;
@@ -217,6 +226,9 @@ footer{
     padding-top:10px;
     width:100%;
     justify-content:space-between;
+    @include mq('xs'){
+        display:block;
+    }
     & .container{
         display:flex;
         flex-direction:row;
