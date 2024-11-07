@@ -303,14 +303,11 @@
 @include mq('l'){
     .hidden-xs{
         display:block;
-        padding-right:30px;
     }
     .visible-xs{
         display: none !important;
     }
-    .article-list-item{
-        padding-left:41.53px;
-    }
+
     .article-container{
         width:calc(100% / 3);
         float:left;

@@ -79,19 +79,20 @@ p{
     font-size: 14px;
     line-height: 1.42857143;
     border-radius: 2px;
-
     &-primary{
         &--inverse-1{
             border-radius:6px;
             padding:10px 30px;
             font-size:20px;
             background-color:#272936;
+            overflow:hidden;
         }
         &--inverse-2{
             border-radius:6px;
             padding:10px 30px;
             font-size:20px;
             background-color:#272936;
+            overflow:hidden;
         }
     }
     &-google{
@@ -100,6 +101,7 @@ p{
         border-radius: 6px;
         padding: 10px 30px;
         font-size: 20px;
+        overflow:hidden;
     }
     &-trustpilot{
         background-color:#00b67b;
@@ -109,6 +111,7 @@ p{
         border-radius: 6px;
         padding: 10px 30px;
         font-size: 20px;
+        overflow:hidden;
     }
 
     @media only screen and (min-width:767px){
