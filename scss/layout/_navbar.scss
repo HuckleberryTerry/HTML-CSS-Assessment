@@ -1,0 +1,90 @@
+#header{
+    header {
+        & .inner{
+            padding:20px 0;
+            & .row{
+                @include mq('xs'){
+                    display:table;
+                    width:100%;
+                    margin:0;
+                }
+            &>*{
+                display:table-cell;
+                float:none;
+                vertical-align:middle;
+                width:100%;
+                padding-right:10px;
+            }
+            &>:last-child{
+                width:1%;
+            } 
+            }
+            & .logo-container{
+                display:table;
+                table-layout:fixed;
+                & .logo{
+                    display:table-cell;
+                    vertical-align:middle;
+                    img{
+                        max-width:82%;
+                        display:block;
+                    }
+                }
+            }
+            & .header-container{
+                .hamburger{
+                    float:right;
+                    padding:7px 0;
+                    .btn{
+                        height:56px;
+                        line-height:46px;
+                        font-size:px-to-rem(18);
+                        float:left;
+                        span{
+                            font-size:px-to-rem(23);
+                            line-height:45px;
+                        }
+                        &-primary-hamburger{
+                            color: #fff;
+                            background-color: #333645;
+                            border-color: #333645;
+                        }
+                    }
+                }
+            }
+        }
+        & .search-form-wrapper--mobile>.search-form{
+            margin-top:11px;
+            position:relative;
+            &>.form-control{
+                background-color:rgba(0,0,0,.1);
+                outline:1px solid hsla(0,0%,100%,.2);
+                border:2px solid rgba(0,0,0,.1);
+                transition:none;
+                width:100%;
+                padding-right:30px;
+            }
+            & button{
+                background:none;
+                border:none;
+                color:#333645;
+                position:absolute;
+                right:5px;
+                line-height:27px;
+                font-size:20px;
+                outline:none;
+            }
+        }
+    }
+}
+
+@include mq('xs'){
+    .header-container-mobile{
+        font-size:32px;
+        margin-left:15px;
+    }
+}
+
+.hidden{
+    display:none;
+}

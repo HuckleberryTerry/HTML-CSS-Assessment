@@ -1,0 +1,239 @@
+.btn{
+    ///===============================================================================
+    /// _base partial button styles
+    ///===============================================================================
+    height: auto;
+    line-height: 35px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-size: 1.063rem;
+    border-radius: 3px;
+    white-space: normal;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 2px;
+    ///===============================================================================
+    /// _Welcome partial button styles
+    ///===============================================================================
+    &-primary{
+        &--inverse-1{
+            border-radius:6px;
+            padding:10px 30px;
+            font-size:20px;
+            background-color:#272936;
+            overflow:hidden;
+        }
+        &--inverse-2{
+            border-radius:6px;
+            padding:10px 30px;
+            font-size:20px;
+            background-color:#272936;
+            overflow:hidden;
+        }
+    }
+    &-google{
+        background-color:#4387f6;
+        margin-right:8px;
+        border-radius: 6px;
+        padding: 10px 30px;
+        font-size: 20px;
+        overflow:hidden;
+    }
+    &-trustpilot{
+        background-color:#00b67b;
+        display:inline-flex;
+        white-space:nowrap;
+        max-width:fit-content;
+        border-radius: 6px;
+        padding: 10px 30px;
+        font-size: 20px;
+        overflow:hidden;
+    }
+
+    @media only screen and (min-width:767px){
+        & > em{
+            line-height:35px;
+            &.pull-right{
+                margin-right: -4px;
+                margin-left: 12px;
+            }
+        }
+        &-google{
+            margin-top:20px;
+        }
+        &-trustpilot{
+            margin-top:20px;
+        }
+        &-primary{
+            &--inverse-1{
+                color:white;
+                margin-bottom:50px;
+            }
+            &--inverse-2{
+                margin-bottom:50px;
+            }
+        }
+    }
+
+    @media only screen and (max-width:767px){
+        & > em{
+            line-height:35px;
+            &.pull-right{
+                margin-right: -4px;
+                margin-left: 12px;
+            }
+        }
+        &-google{
+            margin-top:20px;
+        }
+        &-trustpilot{
+            margin-top:20px;
+        }
+        &-primary{
+            &--inverse-1{
+                color:white;
+                margin-bottom:50px;
+            }
+            &--inverse-2{
+                margin-bottom:50px;
+            }
+        }
+    }
+    
+    @media only screen and (max-width:555px){
+        &-primary{
+            &--inverse-1{
+                color:white;
+                margin-bottom:17px;
+            }
+            &--inverse-2{
+                margin-bottom:50px;
+            }
+        }
+    }
+
+    @include mq('s'){
+        &-primary{
+            &--inverse-1{
+                color:white;
+                margin-bottom:50px;
+            }
+            &--inverse-2{
+                margin-bottom:50px;
+            }
+        }
+    }
+    
+    @include mq('m'){
+        &-primary{
+            &--inverse-1{
+                color:white;
+                margin-bottom:17px;
+            }
+            &--inverse-2{
+                margin-bottom:0px;
+            }
+        }
+    }
+
+    @include mq('l'){
+        &-primary{
+            &--inverse-1{
+                color:white;
+                margin-bottom:0px;
+            }
+            &--inverse-2{
+                margin-bottom:0px;
+            }
+        }
+        &-google{
+            border:none;
+            max-width:45%;
+            margin-bottom:auto;
+            margin-top:30px;
+        }
+        &-trustpilot{
+            border:none;
+            max-width: fit-content;
+            margin-bottom:auto;
+            margin-top:30px;
+        }
+    }
+
+    ///===============================================================================
+    /// _services partial button styles
+    ///===============================================================================
+    &-software{
+        color:#fff;
+        background-color:#f7b322;
+        border-color:#f7b322;
+        padding:5px 15px;
+        font-size:px-to-rem(17);
+        line-height:35px;
+        border-radius:3px;
+    }
+    &-it{
+        color:#fff;
+        background-color:#4183d7;
+        border-color:#4183d7;
+        padding:5px 15px;
+        font-size:px-to-rem(17);
+        line-height:35px;
+        border-radius:3px;
+    }
+    &-digital{
+        color:#fff;
+        background-color: #2ecc2e;
+        border-color:#2ecc2e;
+        padding:5px 15px;
+        font-size:px-to-rem(17);
+        line-height:35px;
+        border-radius:3px;
+    }
+    &-telecoms{
+        color:#fff;
+        background-color: #d64541;
+        border-color:#d64541;
+        padding:5px 15px;
+        font-size:px-to-rem(17);
+        line-height:35px;
+        border-radius:3px;
+    }
+    &-web{
+        color:#fff;
+        background-color: #926fb1;
+        border-color:#926fb1;
+        padding:5px 15px;
+        font-size:px-to-rem(17);
+        line-height:35px;
+        border-radius:3px;
+    }
+    &-security{
+        color:#fff;
+        background-color: #f62459;
+        border-color:#f62459;
+        padding:5px 15px;
+        font-size:px-to-rem(17);
+        line-height:35px;
+        border-radius:3px;
+    }
+    &-dev-training{
+        color:#fff;
+        background-color: #ce4125;
+        border-color:#ce4125;
+        padding:5px 15px;
+        font-size:px-to-rem(17);
+        line-height:35px;
+        border-radius:3px;
+    }
+}

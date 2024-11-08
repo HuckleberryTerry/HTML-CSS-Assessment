@@ -1,0 +1,187 @@
+#middle{
+    .service{
+        &-block{
+            padding:0;
+        }
+        &-grid{
+            // display:grid;
+            margin-bottom:50px;
+            .service-flex{
+                @include mq('m'){
+                    display:flex;
+                    width:auto;
+                    margin-left:auto;
+                    margin-right:auto;
+                    justify-content: space-evenly;
+                }
+            }
+            & .service-content{
+                &-upper{
+                    display:grid;
+                    padding-left:15px;
+                    padding-right:15px;
+                    grid-template-rows:[row1-start] 340px [row1-end] auto;
+                    @include mq('s'){
+                        grid-template-columns: 720px;
+                        grid-template-rows:[row1-start] 320px [row1-end] auto;
+                    }
+                    @include mq('m'){
+                        display:inline-flex;
+                        width:30%;
+                        padding:0;
+                        margin-left:10px;
+                    }
+                    & .block{
+                        margin-top:30px;
+                        border-radius:15px;
+                        text-align:center;
+                        position:relative;
+                        top:0;
+                        transition:.5s ease;
+                        overflow:hidden;
+                        &>span{
+                            display:block;
+                            &.service-content{
+                                &-title{
+                                    font-size:px-to-rem(20.8);
+                                    padding-bottom:10px;
+                                    margin:0 0 11px;
+                                    position:relative;
+                                    color:#333645;
+                                }
+                                &-description{
+                                    font-size:px-to-rem(14);
+                                    font-weight:400;
+                                    line-height:px-to-rem(20);
+                                    margin-bottom:13px;
+                                }
+                            }
+                        }
+                        &.software>span.icon{
+                            background-color:#67809f;
+                        }
+                        &.it>span.icon{
+                            background-color:#4183d7;
+                        }
+                        &.digital>span.icon{
+                            background-color: #2ecc2e;
+                        }
+                        &>span.icon{
+                            display:block;
+                            height:65px;
+                            width:65px;
+                            margin:0 auto 17px;
+                            color:#fff;
+                            border-radius:50%;
+                            span{
+                                font-size:px-to-rem(32);
+                                line-height:62px;
+                            }
+                        }
+                    }
+                }
+                &-lower{
+                    display:grid;
+                    padding-left:15px;
+                    padding-right:15px;
+                    grid-template-rows:[row1-start] 340px [row1-end] auto;
+                    @media only screen and (min-width:759px){
+                        display:inline-flex;
+                        flex-direction:row;
+                        flex-wrap:wrap;
+                        max-width:48%;
+                        justify-content: center;
+                        margin-left:1.5%;
+                        // grid-template-columns: 340px;
+                        // grid-template-rows:[row1-start] 320px [row1-end] auto;
+                    }
+                    & .block{
+                        margin-top:30px;
+                        border-radius:15px;
+                        text-align:center;
+                        position:relative;
+                        top:0;
+                        transition:.5s ease;
+                        overflow:hidden;
+                        @include mq('s'){
+                            &.security{
+                                padding-bottom:50px;
+                            }
+                        }
+                        @include mq('m'){
+                            &.dev-training{
+                                padding-bottom:50px;
+                            }
+                        }
+                        &>span{
+                            display:block;
+                            &.service-content{
+                                &-title{
+                                    font-size:px-to-rem(20.8);
+                                    padding-bottom:10px;
+                                    margin:0 0 11px;
+                                    position:relative;
+                                    color:#333645;
+                                }
+                                &-description{
+                                    font-size:px-to-rem(14);
+                                    font-weight:400;
+                                    line-height:px-to-rem(20);
+                                    margin-bottom:13px;
+                                }
+                            }
+                        }
+                        &.telecoms>span.icon{
+                            background-color:#d64541;
+                        }
+                        &.web>span.icon{
+                            background-color:#926fb1;
+                        }
+                        &.security>span.icon{
+                            background-color: #f62459;
+                        }
+                        &.dev-training>span.icon{
+                            background-color:#ce4125;
+                        }
+                        &>span.icon{
+                            display:block;
+                            height:65px;
+                            width:65px;
+                            margin:0 auto 17px;
+                            color:#fff;
+                            border-radius:50%;
+                            span{
+                                font-size:px-to-rem(32);
+                                line-height:62px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &-view{
+            padding-left:15px;
+            padding-right:15px;
+            margin:30px auto -70px;
+            text-align:center;
+            @include mq('s'){
+                margin:-77px auto -70px;
+            }
+            a{
+                color:#333645;
+            }
+        }
+        &-title{
+            width:100%;
+            &-header{
+                font-size:px-to-rem(44);
+                font-weight:400;
+                color:#333645;
+            }
+        }
+    }
+    .container{
+        padding-bottom:50px;
+    }
+
+}

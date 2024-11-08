@@ -4,19 +4,107 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="ROBOTS" contents="NOINDEX,NOFOLLOW">
     <title>Netmatters Homepage Clone</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
-    </header>
-    <div class="filler">
-      This is test filler
+    <div id="header">
+      <header>
+        <div class="inner">
+          <div class="container">
+            <div class="row">
+              <div class="header-container">
+                <div class="logo-container">
+                  <a class="logo" href="#">
+                    <img src="assets/images/nm-logo-black-header.png" alt="Netmatters">
+                  </a>
+                </div>
+              </div>
+              <div class="header-container-mobile">
+                <a class="icon-phone_in_talk"></a>
+              </div>
+              <div class="header-container">
+                <div class="hamburger">
+                  <button type="button" class="btn btn-primary-hamburger">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner icon-menu">
+                      </span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="search-form-wrapper--mobile visible-xs">
+              <form method="GET" action="https://www.netmatters.co.uk/search" accept-charset="UTF-8" class="search-form">
+                <label for="search-input" class="hidden">Search:</label>
+                <input class="form-control search-bar" placeholder="Search..." id="search-input" name="keyword" type="text" value>
+                <button type="submit" id="search-submit">
+                  <span class="icon-search"></span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="main-navigation hidden-xs">
+        <div class="container">
+          <ul>
+            <li class="software nav-item">
+              <a href="#">
+                <span class="icon-cogs"></span>
+                  <small>Bespoke</small>
+                  Software
+              </a>
+            </li>
+            <li class="it nav-item">
+              <a href="#">
+                <span class="icon-display"></span>
+                  <small>IT</small>
+                  Support
+              </a>
+            </li>
+            <li class="digital nav-item">
+              <a href="#">
+                <span class="icon-bar-graph"></span>
+                  <small>Digital</small>
+                  Marketing
+              </a>
+            </li>
+            <li class="telecoms nav-item">
+              <a href="#">
+                <span class="icon-phone_in_talk"></span>
+                  <small>Telecoms</small>
+                  Services
+              </a>
+            </li>
+            <li class="web nav-item">
+              <a href="#">
+                <span class="icon-embed2"></span>
+                  <small>Web</small>
+                  Design
+              </a>
+            </li>
+            <li class="security nav-item">
+              <a href="#">
+                <span class="icon-security"></span>
+                  <small>Cyber</small>
+                  Security
+              </a>
+            </li>
+            <li class="dev-course nav-item">
+              <a href="#">
+                <span class="icon-school"></span>
+                  <small>Developer</small>
+                  Course
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
     <div id="banner" class="home">
         <div class="content">
-          <img class="img-banner" src="assets/images/1260-675.png">
+          <img class="img-banner" src="assets/images/1260-675.png" alt="">
           <div class="container content-container">
             <h1 class="container banner-header">The East Of Englands Leading Technology Company</h1>
             <p class="container banner-paragraph">
@@ -32,6 +120,172 @@
         </div>
     </div>
     <div id="middle">
+      <div class="container-section container">
+        <div class="service-block">
+          <div class="service-list">
+            <div class="row">
+              <div class="service-title">
+                <h2 class="service-title-header">
+                  Our Services
+                </h2>
+                <h1 class="service-view float-right hidden-xs">
+                  <a href="#">View Our Work
+                    <em class="icon-arrow-right2">
+                    </em>
+                  </a>
+                </h1>
+              </div>
+              <div class="service-grid">
+                <div class="service-flex">
+                  <div class="service-content-upper">
+                    <a href="#" class="block software">
+                      <span class="icon">
+                        <span class="icon-cogs">
+                        </span>
+                      </span>
+                      <span class="service-content-title">
+                        Bespoke Software
+                      </span>
+                      <span class="service-content-description">
+                        Bespoke software solutions for all your business needs including integrations and reporting.
+                      </span>
+                      <span class="service-btn-container">
+                        <span class="btn btn-software">
+                          Read More
+                        </span>
+                      </span>
+                    </a>
+                  </div>
+                  <div class="service-content-upper">
+                    <a href="#" class="block it">
+                      <span class="icon">
+                        <span class="icon-display">
+
+                        </span>
+                      </span>
+                      <span class="service-content-title">
+                        IT Support
+                      </span>
+                      <span class="service-content-description">
+                        Fully managed IT support and consultancy packages tailored to meet your exact business needs.
+                      </span>
+                      <span class="service-btn-container">
+                        <span class="btn btn-it">
+                          Read More
+                        </span>
+                      </span>
+                    </a>
+                  </div>
+                  <div class="service-content-upper">
+                    <a href="#" class="block digital">
+                      <span class="icon">
+                        <span class="icon-bar-graph">
+                        </span>
+                      </span>
+                      <span class="service-content-title">
+                        Digital Marketing
+                      </span>
+                      <span class="service-content-description">
+                        Driven brand awareness & ROI through creative digital marketing campaigns.
+                      </span>
+                      <span class="service-btn-container">
+                        <span class="btn btn-digital">
+                          Read More
+                        </span>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <div class="service-content-lower">
+                  <a href="#" class="block telecoms">
+                    <span class="icon">
+                      <span class="icon-phone_in_talk">
+                      </span>
+                    </span>
+                    <span class="service-content-title">
+                      Telecoms Services
+                    </span>
+                    <span class="service-content-description">
+                      Business telephony solutions including mobile and connectivity solutions
+                    </span>
+                    <span class="service-btn-container">
+                      <span class="btn btn-telecoms">
+                        Read More
+                      </span>
+                    </span>
+                  </a>
+                </div>
+                <div class="service-content-lower">
+                  <a href="#" class="block web">
+                    <span class="icon">
+                      <span class="icon-embed2">
+                      </span>
+                    </span>
+                    <span class="service-content-title">
+                      Web Design
+                    </span>
+                    <span class="service-content-description">
+                      User-centric design for businesses looking to make a lasting impression
+                    </span>
+                    <span class="service-btn-container">
+                      <span class="btn btn-web">
+                        Read More
+                      </span>
+                    </span>
+                  </a>
+                </div>
+                <div class="service-content-lower">
+                  <a href="#" class="block security">
+                    <span class="icon">
+                      <span class="icon-security">
+                      </span>
+                    </span>
+                    <span class="service-content-title">
+                      Cyber Security
+                    </span>
+                    <span class="service-content-description">
+                      Prevention, testing, consultancy &amp; breach management services.
+                    </span>
+                    <span class="service-btn-container">
+                      <span class="btn btn-security">
+                        Read More
+                      </span>
+                    </span>
+                  </a>
+                </div>
+                <div class="service-content-lower">
+                  <a href="#" class="block dev-training">
+                    <span class="icon">
+                      <span class="icon-school">
+                      </span>
+                    </span>
+                    <span class="service-content-title">
+                      Developer Training
+                    </span>
+                    <span class="service-content-description">
+                      Web design &amp; software training courses designed to secure a job in tech.
+                    </span>
+                    <span class="service-btn-container">
+                      <span class="btn btn-dev-training">
+                        Read More
+                      </span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="service-view float-right visible-xs">
+               <h3 class="float-right">
+                <a href="#">
+                  View Our Work
+                  <em class="icon-arrow-right2">
+                  </em>
+                </a>
+               </h3>>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="welcome-background">
         <div class="container section">
           <div class="row">
@@ -140,7 +394,7 @@
                             <div class="img-container">
                               <a href="#" class="category btn-tooltip" title="View all: Business Development / Careers">Careers</a>
                               <a class="img standard">
-                                <img src="https://www.netmatters.co.uk/assets/images/thumbnails/thumb/business-development-executive-AIfQ.png">
+                                <img src="https://www.netmatters.co.uk/assets/images/thumbnails/thumb/business-development-executive-AIfQ.png" alt="An image displaying a blurred background with fore-text that says We Are Hiring: Business Development Executive">
                               </a>
                             </div>
                             <div class="block">
@@ -153,7 +407,7 @@
                               <a class="btn btn-bus-dev" href="#">Read More</a>
                               <div class="user">
                                 <div class="avatar">
-                                  <img src="assets/images/Avatar-Placeholder.png">
+                                  <img src="assets/images/Avatar-Placeholder.png" alt="an Avatar image">
                                 </div>
                                 <div class="details">
                                   <strong class="text-primary">Posted by Rebecca Moore</strong>
@@ -171,7 +425,7 @@
                             <div class="img-container">
                               <a href="#" class="category btn-tooltip" title="View all: Digital Marketing / Insights">Insights</a>
                               <a class="img standard">
-                                <img src="https://www.netmatters.co.uk/assets/images/thumbnails/thumb/why-should-i-P4Y2.png">
+                                <img src="https://www.netmatters.co.uk/assets/images/thumbnails/thumb/why-should-i-P4Y2.png" alt="Why should I invest inn content Marketing? How to set yourself apart, Online.">
                               </a>
                             </div>
                             <div class="block">
@@ -184,7 +438,7 @@
                               <a class="btn btn-digital" href="#">Read More</a>
                               <div class="user">
                                 <div class="avatar">
-                                  <img src="assets/images/Avatar-Placeholder.png">
+                                  <img src="assets/images/Avatar-Placeholder.png" alt="an avatar image">
                                 </div>
                                 <div class="details">
                                   <strong class="text-primary">Posted by Netmatters</strong>
@@ -202,7 +456,7 @@
                             <div class="img-container">
                               <a href="#" class="category btn-tooltip" title="View all: Web Design / News">News</a>
                               <a class="img standard">
-                                <img src="https://www.netmatters.co.uk/assets/images/thumbnails/thumb/september-notables-2024-ZBOM.png">
+                                <img src="https://www.netmatters.co.uk/assets/images/thumbnails/thumb/september-notables-2024-ZBOM.png" alt="">
                               </a>
                             </div>
                             <div class="block">
@@ -217,7 +471,7 @@
                               <a class="btn btn-web" href="#">Read More</a>
                               <div class="user">
                                 <div class="avatar">
-                                  <img src="assets/images/Avatar-Placeholder.png">
+                                  <img src="assets/images/Avatar-Placeholder.png" alt="an avatar image">
                                 </div>
                                 <div class="details">
                                   <strong class="text-primary">Posted by Netmatters</strong>
@@ -247,6 +501,7 @@
         </div>
       </div>
     </div>
+    </div>
     <footer>
       <div class="container">
         <div class="footer-row">
@@ -254,7 +509,7 @@
             <div class="footer-info footer-social-menu">
               <div class="footer-logo">
                 <!--Include Image for NetMatters-->
-                <img class="footer-logo-img" src="assets/images/nm-logo-white-med.png">
+                <img class="footer-logo-img" src="assets/images/nm-logo-white-med.png" alt="Netmatters Logo">
               </div>
               <h4>FOLLOW US ON:</h4>
               <div class="footer-social-logos">
