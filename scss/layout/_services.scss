@@ -177,11 +177,13 @@
                 font-size:px-to-rem(44);
                 font-weight:400;
                 color:#333645;
+                overflow:hidden;
             }
         }
     }
     .container{
         padding-bottom:50px;
+        overflow:hidden;
     }
 
 }
