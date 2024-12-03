@@ -5,6 +5,7 @@
 .article{
     .section{
         padding-bottom:50px;
+        overflow:hidden;
     }
     a:not(.btn){
         font-weight:600;
@@ -36,7 +37,8 @@
                         font-size: 2.25rem;
                         font-weight: 400;
                         margin: 0 0 28px;
-                        color: #333645
+                        color: #333645;
+                        overflow:hidden;
                         
                     }
                     strong:not(.btn){
@@ -62,6 +64,7 @@
                     flex-wrap:wrap;
                     margin-left:-15px;
                     margin-right:-15px;
+                    overflow:hidden;
                     // justify-content: center;
                     & > *{
                         flex:0 0 auto;
