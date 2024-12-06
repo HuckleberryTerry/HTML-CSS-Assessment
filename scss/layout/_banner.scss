@@ -73,12 +73,12 @@
                     & button:before{
                         color:white;
                         padding-top:3px;
+                        font-size:.75rem;
                     }
                     &.slick-active{
                         & button:before{
-                            padding-top:.04rem;
-                            font-size:.75rem;
-                            border:solid 3px white;
+                            padding-top:.07rem;
+                            border:solid 2.95px white;
                             border-radius:50%;
                             color:white;
                         }
@@ -96,8 +96,14 @@
         margin-left:auto;
         margin-right:auto;
         width:100%;
-        min-height:500px;
+        max-height:550px;
         height:75vh;
+        @include mq('m'){
+            height:70vh;
+        }
+        @include mq('l'){
+            height:70vh;
+        }
     }
     .btn{
         max-width:250px;
