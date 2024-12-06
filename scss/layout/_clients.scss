@@ -1,0 +1,11 @@
+.clients-banner{
+    padding:50px 0;
+    & .client{
+        display:flex;
+        margin-left:50px;
+    }
+    .slick-track{
+        display:flex;
+        align-items:center;
+    }
+}

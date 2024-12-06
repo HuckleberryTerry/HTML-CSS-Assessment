@@ -419,11 +419,17 @@ ul, ol {
   margin: 0;
 }
 
+.clearfix {
+  content: "";
+  display: table;
+}
+
 body {
   margin: 0 auto;
   font-family: "Poppins", sans-serif;
   letter-spacing: 0.4px;
   font-size: 1rem;
+  color: #666;
 }
 
 * {
@@ -787,6 +793,23 @@ label {
 }
 .hidden {
   display: none;
+}
+
+#header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: white;
+}
+
+.header-hidden {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+}
+
+.header-visible {
+  transform: translateY(0);
+  transition: transform 0.3s ease;
 }
 
 #middle .service-block {
@@ -1499,11 +1522,11 @@ p {
 #banner .content .slick-dots li button:before {
   color: white;
   padding-top: 3px;
+  font-size: 0.75rem;
 }
 #banner .content .slick-dots li.slick-active button:before {
-  padding-top: 0.04rem;
-  font-size: 0.75rem;
-  border: solid 3px white;
+  padding-top: 0.07rem;
+  border: solid 2.95px white;
   border-radius: 50%;
   color: white;
 }
@@ -1517,8 +1540,18 @@ p {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  min-height: 500px;
+  max-height: 550px;
   height: 75vh;
+}
+@media (min-width: 992px) {
+  .content .img-banner {
+    height: 70vh;
+  }
+}
+@media (min-width: 1260px) {
+  .content .img-banner {
+    height: 70vh;
+  }
 }
 .content .btn {
   max-width: 250px;
@@ -1687,9 +1720,6 @@ p {
   padding-top: 30px;
   border-top: 1px solid #ccc;
 }
-.article .latest-article .article-list-item.bus-dev {
-  padding: 0;
-}
 .article .latest-article .article-list-item.bus-dev .category {
   background-color: #db8c0d;
 }
@@ -1832,6 +1862,132 @@ p {
 }
 h3 {
   font-size: 1.625rem;
+}
+
+.side-bar {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background: #333645;
+  width: 0px;
+  overflow: auto;
+  z-index: 0;
+}
+.side-bar.active {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background: #333645;
+  width: 275px;
+  overflow: auto;
+}
+
+#side-lined {
+  position: absolute;
+  left: -275px;
+  width: 100%;
+}
+
+#side-lined::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  content: "";
+}
+
+.clients-banner {
+  padding: 50px 0;
+}
+.clients-banner .client {
+  display: flex;
+  margin-left: 50px;
+}
+.clients-banner .slick-track {
+  display: flex;
+  align-items: center;
+}
+
+.partners {
+  padding: 50px 0;
+}
+.partners .partner {
+  display: flex;
+  margin-left: 50px;
+}
+.partners .slick-track {
+  display: flex;
+  align-items: center;
+}
+
+#cookie-consent {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 15;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  outline: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+#cookie-consent .modal-dialogue {
+  margin: auto;
+}
+
+.modal-content {
+  position: relative;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  background-clip: padding-box;
+  outline: none;
+}
+.modal-header {
+  padding: 15px 20px;
+  border-bottom: 1px solid #e5e5e5;
+  min-height: pxtorem(16.42857143);
+}
+.modal-title {
+  margin: 0;
+  line-height: 1.42857143;
+  font-weight: 400;
+}
+.modal-body {
+  position: relative;
+  padding: 20px;
+}
+.modal-body a {
+  color: #333645;
+}
+.modal-footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 15px;
+}
+.modal-footer .row > * {
+  flex: 0 0 auto;
+  max-width: 100%;
+}
+.modal-spacer {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .main-navigation {
@@ -2067,4 +2223,23 @@ h3 {
   font-size: 1.0625rem;
   line-height: 35px;
   border-radius: 3px;
+}
+.btn-cookie-settings {
+  position: fixed;
+  line-height: 22px;
+  z-index: 11;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  background: #75788a;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: white;
+  border: solid #75788a;
+  border-width: 1px 1px 0 0;
+  border-radius: 0;
+  border-top-right-radius: 10px;
+  padding: 0 10px;
+  cursor: pointer;
+  font-size: 0.8rem;
 }/*# sourceMappingURL=style.css.map */

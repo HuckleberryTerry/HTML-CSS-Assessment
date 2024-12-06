@@ -1,0 +1,11 @@
+.partners{
+    padding:50px 0;
+    & .partner{
+        display:flex;
+        margin-left:50px;
+    }
+    .slick-track{
+        display:flex;
+        align-items:center;
+    }
+}
