@@ -26,13 +26,13 @@
                 overflow: hidden;
                 width:auto;
                 @include mq('xs'){
-                    top: -460px;
+                    top: -490px;
                 }
                 @include mq('s'){
-                    top: -460px;
+                    top: -490px;
                 }
                 @include mq('m'){
-                    top: -460px;
+                    top: -490px;
                 }
             }
             &-paragraph {
@@ -53,22 +53,22 @@
                 overflow: hidden;
                 width:auto;
                 @include mq('xs'){
-                    top: -440px;
+                    top: -480px;
                 }
                 @include mq('s'){
-                    top: -440px;
+                    top: -480px;
                 }
                 @include mq('m'){
-                    top: -440px;
+                    top: -480px;
                 }
             }
         }
         .slick{
             &-dots{
-                padding-bottom:200px;
                 display:flex;
                 justify-content:center;
                 overflow:hidden;
+                padding-bottom:50px;
                 li{
                     & button:before{
                         color:white;
@@ -90,6 +90,7 @@
 }
 .content{
     position:relative;
+    height:450px;
     .img-banner{
         position:relative;
         display:flex;
@@ -119,7 +120,7 @@
             line-height: 1.75rem;
             font-weight: 600;
             position: relative;
-            top: -250px;
+            top: -350px;
             right: 0;
             bottom: 0;
             left: 0;

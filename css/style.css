@@ -430,6 +430,7 @@ body {
   letter-spacing: 0.4px;
   font-size: 1rem;
   color: #666;
+  z-index: 1;
 }
 
 * {
@@ -743,10 +744,6 @@ label {
   max-width: 82%;
   display: block;
 }
-#header header .inner .header-container .hamburger {
-  float: right;
-  padding: 7px 0;
-}
 #header header .inner .header-container .hamburger .btn {
   height: 56px;
   line-height: 46px;
@@ -793,6 +790,72 @@ label {
 }
 .hidden {
   display: none;
+}
+
+#hamburger-wrapper {
+  background-color: #333645;
+  display: flex;
+  align-items: center;
+  width: 63px;
+  height: 56px;
+  margin: 0;
+  padding: 0;
+  border-radius: 3px;
+}
+
+.hamburger {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 12px;
+}
+
+.hamburger,
+.hamburger:before,
+.hamburger:after {
+  padding: 0;
+  background-color: white;
+  width: 33px;
+  height: 4px;
+  transition: margin 0.1s 0.2s, transform 0.2s;
+}
+
+.hamburger:before,
+.hamburger:after {
+  margin: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.hamburger:before {
+  margin-top: -8px;
+}
+
+.hamburger:after {
+  margin-top: 8px;
+}
+
+/* STYLES FOR OUR BURGER WHEN THE MENU OPENS */
+.open .hamburger {
+  transform: rotate(45deg);
+}
+
+.open .hamburger,
+.open .hamburger:before,
+.open .hamburger:after {
+  transition: margin 0.2s, transform 0.1s 0.2s;
+}
+
+.open .hamburger:before,
+.open .hamburger:after {
+  margin-top: 0;
+}
+
+.open .hamburger:after {
+  transform: rotate(-90deg);
 }
 
 #header {
@@ -1467,17 +1530,17 @@ p {
 }
 @media (max-width: 767px) {
   #banner .content .banner-header {
-    top: -460px;
+    top: -490px;
   }
 }
 @media (min-width: 768px) {
   #banner .content .banner-header {
-    top: -460px;
+    top: -490px;
   }
 }
 @media (min-width: 992px) {
   #banner .content .banner-header {
-    top: -460px;
+    top: -490px;
   }
 }
 #banner .content .banner-paragraph {
@@ -1500,24 +1563,24 @@ p {
 }
 @media (max-width: 767px) {
   #banner .content .banner-paragraph {
-    top: -440px;
+    top: -480px;
   }
 }
 @media (min-width: 768px) {
   #banner .content .banner-paragraph {
-    top: -440px;
+    top: -480px;
   }
 }
 @media (min-width: 992px) {
   #banner .content .banner-paragraph {
-    top: -440px;
+    top: -480px;
   }
 }
 #banner .content .slick-dots {
-  padding-bottom: 200px;
   display: flex;
   justify-content: center;
   overflow: hidden;
+  padding-bottom: 50px;
 }
 #banner .content .slick-dots li button:before {
   color: white;
@@ -1533,6 +1596,7 @@ p {
 
 .content {
   position: relative;
+  height: 450px;
 }
 .content .img-banner {
   position: relative;
@@ -1568,7 +1632,7 @@ p {
   line-height: 1.75rem;
   font-weight: 600;
   position: relative;
-  top: -250px;
+  top: -350px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -1873,7 +1937,8 @@ h3 {
   background: #333645;
   width: 0px;
   overflow: auto;
-  z-index: 0;
+  width: 275px;
+  z-index: -1000;
 }
 .side-bar.active {
   position: fixed;
@@ -1881,14 +1946,14 @@ h3 {
   right: 0;
   height: 100%;
   background: #333645;
-  width: 275px;
   overflow: auto;
+  z-index: -1000;
 }
 
 #side-lined {
   position: absolute;
-  left: -275px;
   width: 100%;
+  z-index: 0;
 }
 
 #side-lined::after {
@@ -1977,7 +2042,9 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 15px;
+  padding: 20px 0;
+  text-align: right;
+  border-top: 1px solid #e5e5e5;
 }
 .modal-footer .row > * {
   flex: 0 0 auto;
@@ -1988,6 +2055,33 @@ h3 {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  width: 100%;
+}
+.modal-spacer--top {
+  margin-bottom: 30px;
+}
+.modal .btn {
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
+  white-space: normal;
+}
+.modal .btn-change-settings {
+  display: block;
+  width: 100%;
+  color: white;
+  background-color: #999aa2;
+  border-color: #999aa2;
+}
+.modal .btn-accept-cookies {
+  display: block;
+  width: 100%;
+  color: white;
+  background-color: #926fb1;
+  border-color: #926fb1;
 }
 
 .main-navigation {

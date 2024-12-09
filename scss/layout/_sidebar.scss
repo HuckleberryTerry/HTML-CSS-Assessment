@@ -7,22 +7,25 @@
         background:#333645;
         width:0px;
         overflow:auto;
-        z-index:0;
+        width:275px;
+        z-index:-1000;
     &.active{
         position:fixed;
         top:0;
         right:0;
         height:100%;
         background:#333645;
-        width:275px;
+        //width:275px;
         overflow:auto;
+        z-index:-1000;
     }
 }
 
 #side-lined{
     position:absolute;
-    left:-275px;
+    //left:-275px;
     width:100%;
+    z-index: 0;
 }
 #side-lined::after{
     //display:none;
