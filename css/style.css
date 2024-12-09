@@ -1949,7 +1949,7 @@ h3 {
 
 .container-body {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   z-index: 0;
 }
 
