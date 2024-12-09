@@ -1404,8 +1404,6 @@ footer .footer-row .icon-facebook, footer .footer-row .icon-instagram, footer .f
   flex-wrap: wrap;
   position: relative;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 .welcome-background .section .row strong {
   font-weight: 600;
@@ -1648,7 +1646,6 @@ footer .footer-row .icon-facebook, footer .footer-row .icon-instagram, footer .f
 }
 
 .article .section {
-  padding-bottom: 50px;
   overflow: hidden;
 }
 .article a:not(.btn) {
@@ -1952,7 +1949,7 @@ h3 {
 
 .container-body {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   z-index: 0;
 }
 
@@ -1974,7 +1971,7 @@ h3 {
 }
 
 .clients-banner {
-  padding: 50px 0;
+  padding: 0 0 75px;
 }
 .clients-banner .client {
   display: flex;
