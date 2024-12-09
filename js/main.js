@@ -69,7 +69,7 @@ $(document).ready(function(){
 window.onscroll = function(){
     let currentScrollPos = window.scrollY;
     console.log(currentScrollPos);
-    if(currentScrollPos < 200){
+    if(currentScrollPos < 750){
         $('#header').removeAttr('class');
     }
     else if(prevScrollPos < currentScrollPos){
@@ -112,7 +112,7 @@ $hammedBurger.on('click', function(event){
             $hammedBurger.removeClass('open');
             //$sideBar.hide();
             $containerBody.removeAttr('id');
-            //$containerBody.css('height', '0');
+            //$containerBody.css('height', '600px');
             $sideBar.removeClass('active');
             //console.log(event.target);
         }
@@ -160,6 +160,10 @@ $cookies_accept.on('click', function(){
     localStorage.setItem("cBool", "true");
 });
 
+//Cookies: Manage Consent
+$cookies_manage.on('click', function(){
+    $cookies_policy.show();
+});
 
 
 
