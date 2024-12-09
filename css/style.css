@@ -805,19 +805,21 @@ label {
 
 .hamburger {
   position: relative;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 12px;
+  width: 31.5px;
 }
 
 .hamburger,
 .hamburger:before,
 .hamburger:after {
+  display: flex;
   padding: 0;
   background-color: white;
-  width: 33px;
+  width: 31.5px;
   height: 4px;
-  transition: margin 0.1s 0.2s, transform 0.2s;
+  transition: margin 0.1s 0.1s, transform 0.2s;
 }
 
 .hamburger:before,
@@ -846,7 +848,7 @@ label {
 .open .hamburger,
 .open .hamburger:before,
 .open .hamburger:after {
-  transition: margin 0.2s, transform 0.1s 0.2s;
+  transition: margin 0.1s, transform 0.1s 0.2s;
 }
 
 .open .hamburger:before,
@@ -1382,6 +1384,10 @@ footer .footer-row .icon-facebook, footer .footer-row .icon-instagram, footer .f
   background-color: #333645;
   color: #fff;
 }
+.welcome-background p {
+  line-height: 1.875rem;
+  margin-bottom: 25px;
+}
 .welcome-background .section {
   display: flex;
   flex-wrap: wrap;
@@ -1414,11 +1420,6 @@ footer .footer-row .icon-facebook, footer .footer-row .icon-instagram, footer .f
   font-size: 2.25rem;
   font-weight: 400;
   line-height: 1.1;
-}
-
-p {
-  line-height: 1.875rem;
-  margin-bottom: 25px;
 }
 
 .client-header-2 {
@@ -1584,11 +1585,10 @@ p {
 }
 #banner .content .slick-dots li button:before {
   color: white;
-  padding-top: 3px;
   font-size: 0.75rem;
 }
 #banner .content .slick-dots li.slick-active button:before {
-  padding-top: 0.07rem;
+  padding-top: 0.0675rem;
   border: solid 2.95px white;
   border-radius: 50%;
   color: white;
@@ -1948,6 +1948,12 @@ h3 {
   background: #333645;
   overflow: auto;
   z-index: -1000;
+}
+
+.container-body {
+  position: absolute;
+  width: 100vw;
+  z-index: 0;
 }
 
 #side-lined {

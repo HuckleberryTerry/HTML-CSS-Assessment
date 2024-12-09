@@ -68,6 +68,7 @@ $(document).ready(function(){
 //Sticky Header: OnScroll Event
 window.onscroll = function(){
     let currentScrollPos = window.scrollY;
+    console.log(currentScrollPos);
     if(currentScrollPos < 200){
         $('#header').removeAttr('class');
     }
@@ -101,7 +102,7 @@ $hammedBurger.on('click', function(event){
     //$sideBar.animate({width: '275px'});
     $sideBar.addClass('active');
     $hammedBurger.addClass('open');
-    $containerBody.css('height', '100%');
+    //$containerBody.css('height', '100%');
     $containerBody.attr('id', 'side-lined');
     $containerBody.animate({left:'-275px'}, 250);
     $(document).on('click', function(event){
@@ -110,8 +111,8 @@ $hammedBurger.on('click', function(event){
             $containerBody.animate({left: '0'}, 250);
             $hammedBurger.removeClass('open');
             //$sideBar.hide();
-            //$containerBody.removeAttr('id');
-            $containerBody.css('height', '0');
+            $containerBody.removeAttr('id');
+            //$containerBody.css('height', '0');
             $sideBar.removeClass('active');
             //console.log(event.target);
         }

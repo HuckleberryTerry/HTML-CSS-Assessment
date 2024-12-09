@@ -3,6 +3,10 @@
     &-background{
         background-color:#333645;
         color:#fff;
+        p{
+            line-height:px-to-rem(30);
+            margin-bottom:25px;
+        }
         .section{
             display:flex;
             flex-wrap:wrap;
@@ -37,11 +41,6 @@
         font-weight:400;
         line-height:1.1;
     }
-}
-
-p{
-    line-height:px-to-rem(30);
-    margin-bottom:25px;
 }
 
 

@@ -72,12 +72,12 @@
                 li{
                     & button:before{
                         color:white;
-                        padding-top:3px;
+                        // padding-top:1px;
                         font-size:.75rem;
                     }
                     &.slick-active{
                         & button:before{
-                            padding-top:.07rem;
+                            padding-top:.0675rem;
                             border:solid 2.95px white;
                             border-radius:50%;
                             color:white;
