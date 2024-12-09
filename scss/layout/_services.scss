@@ -2,6 +2,9 @@
     .service{
         &-block{
             padding:0;
+            & .row{
+                padding-bottom:50px;
+            }
         }
         &-grid{
             // display:grid;
@@ -18,12 +21,12 @@
             & .service-content{
                 &-upper{
                     display:grid;
-                    padding-left:15px;
+                    padding-left:27px;
                     padding-right:15px;
-                    grid-template-rows:[row1-start] 340px [row1-end] auto;
+                    grid-template-rows:[row1-start] 100% [row1-end] auto;
                     @include mq('s'){
-                        grid-template-columns: 720px;
-                        grid-template-rows:[row1-start] 320px [row1-end] auto;
+                        grid-template-columns: 100%;
+                        grid-template-rows:[row1-start] 100% [row1-end] auto;
                     }
                     @include mq('m'){
                         display:inline-flex;
@@ -84,14 +87,25 @@
                     display:grid;
                     padding-left:15px;
                     padding-right:15px;
-                    grid-template-rows:[row1-start] 340px [row1-end] auto;
+                    grid-template-rows:[row1-start] 100% [row1-end] auto;
                     @media only screen and (min-width:759px){
                         display:inline-flex;
                         flex-direction:row;
                         flex-wrap:wrap;
                         max-width:48%;
                         justify-content: center;
-                        margin-left:1.5%;
+                        margin-left:1.65%;
+                        // grid-template-columns: 340px;
+                        // grid-template-rows:[row1-start] 320px [row1-end] auto;
+                    }
+                    @media only screen and (min-width:992px){
+                        display:inline-flex;
+                        flex-direction:row;
+                        flex-wrap:wrap;
+                        max-width:48%;
+                        justify-content: center;
+                        margin-left:1.2%;
+                        padding-right:5px;
                         // grid-template-columns: 340px;
                         // grid-template-rows:[row1-start] 320px [row1-end] auto;
                     }
@@ -161,8 +175,8 @@
         }
         &-view{
             padding-left:15px;
-            padding-right:15px;
-            margin:30px auto -70px;
+            padding-right:20px;
+            margin:-20px auto -70px;
             text-align:center;
             @include mq('s'){
                 margin:-77px auto -70px;
@@ -178,6 +192,7 @@
                 font-weight:400;
                 color:#333645;
                 overflow:hidden;
+                margin-left:35px;
             }
         }
     }
