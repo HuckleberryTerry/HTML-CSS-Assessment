@@ -6,7 +6,7 @@ const $containerBody = $('.container-body');
 const $cookies_policy = $('#cookie-consent');
 const $cookies_accept = $('.btn-accept-cookies');
 const $cookies_manage = $('.btn-cookie-settings');
-
+const $cookies_settings = $('.btn-change-settings');
 
 
 let prevScrollPos = window.scrollY;
@@ -163,6 +163,11 @@ $cookies_accept.on('click', function(){
 //Cookies: Manage Consent
 $cookies_manage.on('click', function(){
     $cookies_policy.show();
+});
+
+//Cookies: Cookie Settings
+$cookies_settings.on('click', function(){
+    $cookies_policy.hide();
 });
 
 
