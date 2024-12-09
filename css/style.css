@@ -880,6 +880,9 @@ label {
 #middle .service-block {
   padding: 0;
 }
+#middle .service-block .row {
+  padding-bottom: 50px;
+}
 #middle .service-grid {
   margin-bottom: 50px;
 }
@@ -894,14 +897,14 @@ label {
 }
 #middle .service-grid .service-content-upper {
   display: grid;
-  padding-left: 15px;
+  padding-left: 27px;
   padding-right: 15px;
-  grid-template-rows: [row1-start] 340px [row1-end] auto;
+  grid-template-rows: [row1-start] 100% [row1-end] auto;
 }
 @media (min-width: 768px) {
   #middle .service-grid .service-content-upper {
-    grid-template-columns: 720px;
-    grid-template-rows: [row1-start] 320px [row1-end] auto;
+    grid-template-columns: 100%;
+    grid-template-rows: [row1-start] 100% [row1-end] auto;
   }
 }
 @media (min-width: 992px) {
@@ -962,7 +965,7 @@ label {
   display: grid;
   padding-left: 15px;
   padding-right: 15px;
-  grid-template-rows: [row1-start] 340px [row1-end] auto;
+  grid-template-rows: [row1-start] 100% [row1-end] auto;
 }
 @media only screen and (min-width: 759px) {
   #middle .service-grid .service-content-lower {
@@ -971,7 +974,18 @@ label {
     flex-wrap: wrap;
     max-width: 48%;
     justify-content: center;
-    margin-left: 1.5%;
+    margin-left: 1.65%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #middle .service-grid .service-content-lower {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 48%;
+    justify-content: center;
+    margin-left: 1.2%;
+    padding-right: 5px;
   }
 }
 #middle .service-grid .service-content-lower .block {
@@ -1035,8 +1049,8 @@ label {
 }
 #middle .service-view {
   padding-left: 15px;
-  padding-right: 15px;
-  margin: 30px auto -70px;
+  padding-right: 20px;
+  margin: -20px auto -70px;
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -1055,6 +1069,7 @@ label {
   font-weight: 400;
   color: #333645;
   overflow: hidden;
+  margin-left: 35px;
 }
 #middle .container {
   overflow: hidden;
@@ -1883,6 +1898,7 @@ footer .footer-row .icon-facebook, footer .footer-row .icon-instagram, footer .f
   .float-right {
     float: right;
     margin-left: 20px;
+    margin-right: 25px;
   }
 }
 @media (min-width: 768px) and (max-width: 1259px) {
