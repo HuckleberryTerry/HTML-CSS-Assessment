@@ -1,9 +1,15 @@
 //--------------------Global Variables---------------------//
-const $hammedBurger = $('.btn-primary-hamburger');
+const $hammedBurger = $('#hamburger-wrapper');
 const $sideBar = $('.side-bar')
 const $containerBody = $('.container-body');
+
+const $cookies_policy = $('#cookie-consent');
+const $cookies_accept = $('.btn-accept-cookies');
+const $cookies_manage = $('.btn-cookie-settings');
+
+
+
 let prevScrollPos = window.scrollY;
-let cBool;
 //--------------------Slick Carousel: Banner---------------------//
 $(document).ready(function(){
     $('.content').slick({
@@ -84,18 +90,70 @@ window.onscroll = function(){
 }
 
 //Side Menu: Button On Click Event
+//Currently works in practice, I would like to implement a version of this that uses
+//Promises or Async JS to ensure that the stack doesn't get clogged with JS Animation Calls.
+
 $hammedBurger.on('click', function(event){
     $sideBar.show();
+    //$sideBar.animate({width: '275px'});
     $sideBar.addClass('active');
+    $hammedBurger.addClass('open');
+    $containerBody.css('height', '100%');
     $containerBody.attr('id', 'side-lined');
+    $containerBody.animate({left:'-275px'}, 250);
     $(document).on('click', function(event){
         if(event.target.id === 'side-lined'){
-            $sideBar.hide();
+            //$sideBar.animate({width: '-275px'});
+            $containerBody.animate({left: '0'}, 250);
+            $hammedBurger.removeClass('open');
+            //$sideBar.hide();
+            //$containerBody.removeAttr('id');
+            $containerBody.css('height', '0');
             $sideBar.removeClass('active');
-            $containerBody.removeAttr('id');
             //console.log(event.target);
         }
     })
+});
+
+// $hammedBurger.on('click', function(event){
+//     $sideBar.show();
+//     $sideBar.animate({width: '275px'});
+//     $sideBar.addClass('active');
+//     $hammedBurger.addClass('open');
+//     $containerBody.attr('id', 'side-lined');
+//     $containerBody.animate({left:'-275px'});
+//     $(document).on('click', function(event){
+//         if(event.target.id === 'side-lined'){
+//             //$sideBar.hide();
+//             $sideBar.animate({width: '-275px'});
+//             $containerBody.animate({left: '0'});
+//             $sideBar.removeClass('active');
+//             $hammedBurger.removeClass('open');
+//             setTimeout(()=>{
+//                 $containerBody.removeAttr('id');
+//             }, 415);
+//             //console.log(event.target);
+//         }
+//     })
+// });
+
+
+
+//Cookies: Check Accept
+
+if(localStorage.getItem('cBool') === null){
+    $cookies_policy.show();
+}
+else{
+    $cookies_policy.hide();
+    $cookies_manage.show();
+}
+
+
+//Cookies: Set Accept
+$cookies_accept.on('click', function(){
+    $cookies_policy.hide();
+    localStorage.setItem("cBool", "true");
 });
 
 

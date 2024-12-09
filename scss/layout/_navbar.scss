@@ -34,8 +34,6 @@
             }
             & .header-container{
                 .hamburger{
-                    float:right;
-                    padding:7px 0;
                     .btn{
                         height:56px;
                         line-height:46px;
@@ -89,3 +87,69 @@
 .hidden{
     display:none;
 }
+
+#hamburger-wrapper {
+    background-color: #333645;
+    display: flex;
+    align-items: center;
+    width: 63px;
+    height: 56px;
+    margin: 0;
+    padding: 0;
+    border-radius:3px;
+  }
+  
+  .hamburger {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 12px;
+  }
+  
+  .hamburger,
+  .hamburger:before,
+  .hamburger:after {
+    padding: 0;
+    background-color: white;
+    width: 33px;
+    height: 4px;
+    transition: margin .1s .2s, transform .2s;
+  }
+  
+  .hamburger:before,
+  .hamburger:after {
+    margin: 0;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .hamburger:before {
+    margin-top: -8px;
+  }
+  
+  .hamburger:after {
+    margin-top: 8px;
+  }
+  
+  /* STYLES FOR OUR BURGER WHEN THE MENU OPENS */
+  .open .hamburger {
+    transform: rotate(45deg);
+  }
+  
+  .open .hamburger,
+  .open .hamburger:before,
+  .open .hamburger:after {
+    transition: margin .2s, transform .1s .2s;
+  }
+  
+  .open .hamburger:before,
+  .open .hamburger:after {
+    margin-top: 0;
+  }
+  
+  .open .hamburger:after {
+    transform: rotate(-90deg)
+  }
