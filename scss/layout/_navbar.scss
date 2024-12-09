@@ -100,20 +100,23 @@
   }
   
   .hamburger {
-    position: relative;
+    position:relative;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 12px;
+    width: 31.5px;
+    //margin-bottom: 12px;
   }
   
   .hamburger,
   .hamburger:before,
   .hamburger:after {
+    display:flex;
     padding: 0;
     background-color: white;
-    width: 33px;
+    width: 31.5px;
     height: 4px;
-    transition: margin .1s .2s, transform .2s;
+    transition: margin .1s .1s, transform .2s;
   }
   
   .hamburger:before,
@@ -142,7 +145,7 @@
   .open .hamburger,
   .open .hamburger:before,
   .open .hamburger:after {
-    transition: margin .2s, transform .1s .2s;
+    transition: margin .1s, transform .1s .2s;
   }
   
   .open .hamburger:before,

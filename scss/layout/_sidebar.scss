@@ -21,6 +21,13 @@
     }
 }
 
+.container-body{
+    position:absolute;
+    //left:-275px;
+    width:100vw;
+    z-index: 0;
+}
+
 #side-lined{
     position:absolute;
     //left:-275px;
