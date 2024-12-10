@@ -37,7 +37,7 @@
                     }
                     @include mq('m'){
                         display:inline-flex;
-                        width:30%;
+                        width:32%;
                         padding:0;
                         //margin-left:10px;
                     }
@@ -194,7 +194,10 @@
                 margin:-77px auto -70px;
             }
             a{
+                font-size:2.25rem;
+                font-weight:600;
                 color:#333645;
+                padding-right:15px;
             }
         }
         &-title{
@@ -204,6 +207,7 @@
                 font-weight:400;
                 color:#333645;
                 overflow:hidden;
+                padding-left:15px;
                 //margin-left:1.2%;
             }
         }
@@ -216,6 +220,10 @@
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-between;
+            padding-right:0;
+            @include mq('m'){
+                padding-right:8px;
+            }
             //padding: 0 15px;
             @include mq('xs'){
                 padding:0;
