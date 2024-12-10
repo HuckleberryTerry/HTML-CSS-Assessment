@@ -15,24 +15,31 @@
                     width:auto;
                     margin-left:auto;
                     margin-right:auto;
-                    justify-content: space-evenly;
+                    justify-content: space-between;
+                    padding-left:10.5px;
+                    padding-right:10.5px;
                 }
+            }
+            .container-lower{
+                @include mq('l'){display:flex;}
             }
             & .service-content{
                 &-upper{
                     display:grid;
-                    padding-left:27px;
-                    padding-right:15px;
+                    // padding-left:27px;
+                    // padding-right:15px;
                     grid-template-rows:[row1-start] 100% [row1-end] auto;
                     @include mq('s'){
-                        grid-template-columns: 100%;
+                        justify-content:center;
+                        padding:0 15px;
+                        grid-template-columns: 720px;
                         grid-template-rows:[row1-start] 100% [row1-end] auto;
                     }
                     @include mq('m'){
                         display:inline-flex;
                         width:30%;
                         padding:0;
-                        margin-left:10px;
+                        //margin-left:10px;
                     }
                     & .block{
                         margin-top:30px;
@@ -83,18 +90,20 @@
                         }
                     }
                 }
+
                 &-lower{
                     display:grid;
-                    padding-left:15px;
-                    padding-right:15px;
+                    width:100%;
+                    // padding-left:15px;
+                    // padding-right:15px;
                     grid-template-rows:[row1-start] 100% [row1-end] auto;
                     @media only screen and (min-width:759px){
                         display:inline-flex;
                         flex-direction:row;
                         flex-wrap:wrap;
-                        max-width:48%;
+                        max-width:47.7%;
                         justify-content: center;
-                        margin-left:1.65%;
+                        //margin-left:1.65%;
                         // grid-template-columns: 340px;
                         // grid-template-rows:[row1-start] 320px [row1-end] auto;
                     }
@@ -102,12 +111,16 @@
                         display:inline-flex;
                         flex-direction:row;
                         flex-wrap:wrap;
-                        max-width:48%;
+                        max-width:46.8%;
                         justify-content: center;
                         margin-left:1.2%;
                         padding-right:5px;
                         // grid-template-columns: 340px;
                         // grid-template-rows:[row1-start] 320px [row1-end] auto;
+                    }
+                    @include mq('l'){
+                        display:flex;
+                        max-width:268.7px;
                     }
                     & .block{
                         margin-top:30px;
@@ -120,6 +133,7 @@
                         @include mq('s'){
                             &.security{
                                 padding-bottom:50px;
+                                max-width:715px;
                             }
                         }
                         @include mq('m'){
@@ -174,8 +188,6 @@
             }
         }
         &-view{
-            padding-left:15px;
-            padding-right:20px;
             margin:-20px auto -70px;
             text-align:center;
             @include mq('s'){
@@ -192,13 +204,27 @@
                 font-weight:400;
                 color:#333645;
                 overflow:hidden;
-                margin-left:35px;
+                //margin-left:1.2%;
             }
         }
     }
     .container{
         //padding-bottom:50px;
         overflow:hidden;
+        &-lower{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            //padding: 0 15px;
+            @include mq('xs'){
+                padding:0;
+            }
+        }
+    }
+    .heading-container{
+        display:flex;
+        justify-content:space-between;
     }
 
 }

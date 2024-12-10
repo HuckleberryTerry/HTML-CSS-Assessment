@@ -118,7 +118,7 @@
         }
         @include mq('l'){
             .container{
-                width:1260px;
+                width:1200px;
             }
             .row{
                 width:1260px;
@@ -126,8 +126,6 @@
                     width:50%;
                     position: relative;
                     min-height: 1px;
-                    padding-left: 15px;
-                    padding-right: 15px;
                 }
                 & .clients{
                     width:50%;

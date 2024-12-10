@@ -62,20 +62,20 @@
                 .row{
                     display:flex;
                     flex-wrap:wrap;
-                    margin-left:-15px;
-                    margin-right:-15px;
+                    // margin-left:-15px;
+                    // margin-right:-15px;
                     overflow:hidden;
                     // justify-content: center;
                     & > *{
+                        display:flex;
                         flex:0 0 auto;
                         max-width:100%;
+                        justify-content:space-between;
                     }
                 }
                 &-item{
                     font-size:px-to-rem(13);
                     margin-top:30px;
-                    padding-left:15px;
-                    padding-right:15px;
                     position:relative;
                     top:0;
                     transition:.5s ease;
@@ -116,6 +116,9 @@
                             font-weight:400;
                             margin:0 0 15px;
                             color:#333645;
+                            @media only screen and (min-width: 768px) and (max-width: 1259px){
+                                min-height: 3rem;
+                            }
                         }
                         p{
                             font-size:px-to-rem(13);
@@ -259,19 +262,16 @@
             float:right;
         }
     }
-    .article-list-item{
-        padding-left:2%;
-    }
     .article-container{
         width:48%;
         float:left;
         position: relative;
         min-height: 1px;
-        padding-left: 15px;
-        padding-right: 15px;
+        // padding-left: 15px;
+        // padding-right: 15px;
     }
     .container{
-        width:768px;
+        width:750px;
     }
     .float-right{
         float:right;
@@ -302,7 +302,7 @@
     .article{
         &-container{
             width:50%;
-            padding:0;
+            padding:0 15px;
         }
     }
 }
@@ -318,6 +318,7 @@
     .article-container{
         width:calc(100% / 3);
         float:left;
+        padding:0 15px;
     }
     .container{
         width:1200px;

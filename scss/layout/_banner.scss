@@ -77,10 +77,12 @@
                     }
                     &.slick-active{
                         & button:before{
+                            display:flex;
                             padding-top:.0675rem;
                             border:solid 2.95px white;
                             border-radius:50%;
                             color:white;
+                            justify-content:center;
                         }
                     }
                 }
