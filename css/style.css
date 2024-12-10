@@ -917,7 +917,7 @@ label {
 @media (min-width: 992px) {
   #middle .service-grid .service-content-upper {
     display: inline-flex;
-    width: 30%;
+    width: 32%;
     padding: 0;
   }
 }
@@ -1068,7 +1068,10 @@ label {
   }
 }
 #middle .service-view a {
+  font-size: 2.25rem;
+  font-weight: 600;
   color: #333645;
+  padding-right: 15px;
 }
 #middle .service-title {
   width: 100%;
@@ -1078,6 +1081,7 @@ label {
   font-weight: 400;
   color: #333645;
   overflow: hidden;
+  padding-left: 15px;
 }
 #middle .container {
   overflow: hidden;
@@ -1087,6 +1091,12 @@ label {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-right: 0;
+}
+@media (min-width: 992px) {
+  #middle .container-lower {
+    padding-right: 8px;
+  }
 }
 @media (max-width: 767px) {
   #middle .container-lower {
@@ -1128,6 +1138,12 @@ footer {
   footer {
     padding: 47px 0 0;
   }
+}
+footer h4 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-bottom: 26px;
 }
 footer .footer-row {
   display: flex;
@@ -1210,7 +1226,7 @@ footer .footer-row .footer-menu h4 {
   }
 }
 footer .footer-row .footer-menu ul li {
-  line-height: 1.125rem;
+  line-height: 1.375rem;
   font-size: 0.8125rem;
 }
 footer .footer-row .footer-menu ul li a:link {
@@ -1246,13 +1262,19 @@ footer .footer-row .footer-company-info .footer-logo-img {
 }
 footer .footer-row .footer-company-info h4 {
   font-weight: 400;
-  margin: 0 0 15px;
+  margin-top: 24px;
 }
 footer .footer-row .footer-social-logos {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin-bottom: 30px;
+}
+footer .footer-row .footer-social-logos a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.625rem;
+  line-height: 1.625rem;
 }
 @media (max-width: 767px) {
   footer .footer-row .footer-social-logos {
@@ -1740,6 +1762,12 @@ footer .footer-row .icon-facebook, footer .footer-row .icon-instagram, footer .f
   flex: 0 0 auto;
   max-width: 100%;
   justify-content: space-between;
+  flex-direction: row;
+}
+@media (max-width: 767px) {
+  .article .latest-article .article-list .row > * {
+    flex-direction: column;
+  }
 }
 .article .latest-article .article-list-item {
   font-size: 0.8125rem;
@@ -1874,6 +1902,11 @@ footer .footer-row .icon-facebook, footer .footer-row .icon-instagram, footer .f
   border-radius: 3px;
   padding: 30px;
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 767px) {
+  .block {
+    padding: 20px;
+  }
 }
 
 .latest-view {
