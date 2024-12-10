@@ -25,6 +25,12 @@ footer{
     @include mq('l'){
         padding:47px 0 0;
     }
+    h4{
+        color:white;
+        text-transform:uppercase;
+        font-size:1rem;
+        margin-bottom:26px;
+    }
     .footer-row{
         display:flex;
         flex-wrap:wrap;
@@ -88,7 +94,7 @@ footer{
                 }
             }
             ul li{
-                line-height:px-to-rem(18);
+                line-height:px-to-rem(22);
                 font-size:px-to-rem(13);
                 & a{
                     &:link{
@@ -124,7 +130,7 @@ footer{
             }
             h4{
                 font-weight:400;
-                margin:0 0 15px;
+                margin-top:24px
             }
         }
         .footer-social-logos{
@@ -132,6 +138,12 @@ footer{
             flex-direction: row;
             flex-wrap: wrap;
             margin-bottom: 30px;
+            & a{
+                text-align:center;
+                text-decoration:none;
+                font-size:px-to-rem(26);
+                line-height:px-to-rem(26);
+            }
             @include mq('xs'){
                 width:100vw;
                 padding-right:70px;
