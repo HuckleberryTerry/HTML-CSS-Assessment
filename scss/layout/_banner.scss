@@ -26,13 +26,22 @@
                 overflow: hidden;
                 width:auto;
                 @include mq('xs'){
-                    top: -490px;
+                    top: -450px;
                 }
                 @include mq('s'){
-                    top: -490px;
+                    top: -450px;
                 }
                 @include mq('m'){
-                    top: -490px;
+                    top: -450px;
+                    padding-left:15px;
+                    margin-left:27px;
+                    justify-content: flex-start;
+                }
+                @include mq('l'){
+                    top: -450px;
+                    padding-left:15px;
+                    margin-left:134px;
+                    justify-content: flex-start;
                 }
             }
             &-paragraph {
@@ -53,13 +62,22 @@
                 overflow: hidden;
                 width:auto;
                 @include mq('xs'){
-                    top: -480px;
+                    top: -440px;
                 }
                 @include mq('s'){
-                    top: -480px;
+                    top: -440px;
                 }
                 @include mq('m'){
-                    top: -480px;
+                    top: -440px;
+                    padding-left:15px;
+                    margin-left:27px;
+                    justify-content: flex-start;
+                }
+                @include mq('l'){
+                    top: -440px;
+                    padding-left:15px;
+                    margin-left:134px;
+                    justify-content: flex-start;
                 }
             }
         }
@@ -92,20 +110,71 @@
 }
 .content{
     position:relative;
-    height:450px;
+    height:550px;
+    z-index:0;
     .img-banner{
-        position:relative;
         display:flex;
+        position:relative;
         margin-left:auto;
         margin-right:auto;
+        justify-content:center;
         width:100%;
-        max-height:550px;
-        height:75vh;
+        min-height:550px;
+        height:100%;
         @include mq('m'){
-            height:70vh;
+            height:550px;
         }
         @include mq('l'){
-            height:70vh;
+            height:550px;
+        }
+        &.one{
+            margin-top:-1px;
+            background-image: url('../assets/images/Banner/home-YLei.png'), linear-gradient(270deg,transparent 25%,#000);
+            background-blend-mode:overlay;
+            background-size: cover;
+            background-position: center;
+        }
+        &.two{
+            margin-top:-1px;
+            background-image: url('../assets/images/Banner/home-O67Y.jpg'), linear-gradient(270deg,transparent 25%,#000);
+            background-blend-mode:overlay;
+            background-size: cover;
+            background-position: center;
+        }
+        &.three{
+            margin-top:-1px;
+            background-image: url('../assets/images/Banner/home-gay8.png'), linear-gradient(270deg,transparent 25%,#000);
+            background-blend-mode:overlay;
+            background-size: cover;
+            background-position: center;
+        }
+        &.four{
+            margin-top:-1px;
+            background-image: url('../assets/images/Banner/home-6yTp.png'), linear-gradient(270deg,transparent 25%,#000);
+            background-blend-mode:overlay;
+            background-size: cover;
+            background-position: center;
+        }
+        &.five{
+            margin-top:-1px;
+            background-image: url('../assets/images/Banner/home-J8Xx.png'), linear-gradient(270deg,transparent 25%,#000);
+            background-blend-mode:overlay;
+            background-size: cover;
+            background-position: center;
+        }
+        &.six{
+            margin-top:-1px;
+            background-image: url('../assets/images/Banner/home-K0pn.jpg'), linear-gradient(270deg,transparent 25%,#000);
+            background-blend-mode:overlay;
+            background-size: cover;
+            background-position: center;
+        }
+        &.seven{
+            margin-top:-1px;
+            background-image: url('../assets/images/Banner/home-MSxH.png'), linear-gradient(270deg,transparent 25%,#000);
+            background-blend-mode:overlay;
+            background-size: cover;
+            background-position: center;
         }
     }
     .btn{
@@ -113,6 +182,7 @@
         margin-left:auto;
         margin-right:auto;
         display:flex;
+        
         &-web{
             background-color:#926fb1;  
             height:50px;
@@ -122,7 +192,7 @@
             line-height: 1.75rem;
             font-weight: 600;
             position: relative;
-            top: -350px;
+            top: -375px;
             right: 0;
             bottom: 0;
             left: 0;
@@ -131,6 +201,14 @@
             align-content: center;
             align-items: center;
             text-align:center;
+            @include mq('m'){
+                margin-left: 42px;
+                justify-content: flex-start;
+            }
+            @include mq('l'){
+                margin-left: 150px;
+                justify-content: flex-start;
+            }
         }
     }
 }

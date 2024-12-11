@@ -1,9 +1,9 @@
 #middle{
     .service{
         &-block{
-            padding:0;
+            padding-bottom:50px;
             & .row{
-                padding-bottom:50px;
+                padding-bottom:0;
             }
         }
         &-grid{

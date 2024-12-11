@@ -34,13 +34,13 @@ footer{
     .footer-row{
         display:flex;
         flex-wrap:wrap;
-        justify-content:space-between;
+        //justify-content:space-between;
         text-align:left;
         position:relative;
         flex-direction:column;
         @include mq('l'){
             flex-direction:row;
-            justify-content:center;
+            //justify-content:center;
         }
         .row{
             display:flex;
@@ -68,7 +68,6 @@ footer{
             position:relative;
             @include mq('xs'){
                 padding:0;
-                margin:0;
             }
             @include mq('xs'){
                 width:100vw;
@@ -89,9 +88,6 @@ footer{
                 margin-bottom:26px;
                 margin-top:0;
                 font-weight:400;
-                @include mq('xs'){
-                    margin-top:24px;
-                }
             }
             ul li{
                 line-height:px-to-rem(22);
@@ -139,10 +135,17 @@ footer{
             flex-wrap: wrap;
             margin-bottom: 30px;
             & a{
-                text-align:center;
+                display:flex;
+                justify-content:center;
                 text-decoration:none;
                 font-size:px-to-rem(26);
                 line-height:px-to-rem(26);
+                @include mq('xs'){
+                    width:70px;
+                }
+                @media only screen and (max-width: 480px){
+                    width:35%;
+                }
             }
             @include mq('xs'){
                 width:100vw;
@@ -235,9 +238,10 @@ footer{
     font-size:px-to-rem(13);
     background-color:#212330;
     color:#fff;
-    padding-top:10px;
+    padding-top:7px;
     width:100%;
     justify-content:space-between;
+    height:45px;
     @include mq('xs'){
         display:block;
     }
@@ -248,7 +252,7 @@ footer{
             display:flex;
             flex-direction:row;
             align-self:flex-start;
-            padding:5px 0 10px;
+            padding:10px 0 10px;
             @include mq('xs'){
                 display:block;
             }

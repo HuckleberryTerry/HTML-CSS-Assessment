@@ -69,7 +69,7 @@ $(document).ready(function(){
 window.onscroll = function(){
     let currentScrollPos = window.scrollY;
     console.log(currentScrollPos);
-    if(currentScrollPos < 750){
+    if(currentScrollPos < 400){
         $('#header').removeAttr('class');
     }
     else if(prevScrollPos < currentScrollPos){
