@@ -2437,26 +2437,6 @@ h3 {
   width: 100%;
   z-index: 0;
 }
-@media (max-width: 767px) {
-  #side-lined {
-    left: -275px;
-  }
-}
-@media (min-width: 768px) {
-  #side-lined {
-    left: -275px;
-  }
-}
-@media (min-width: 992px) {
-  #side-lined {
-    left: -375px;
-  }
-}
-@media (min-width: 1260px) {
-  #side-lined {
-    left: -375px;
-  }
-}
 
 #side-lined::after {
   position: absolute;
@@ -3035,6 +3015,11 @@ h3 {
   line-height: 35px;
   border-radius: 3px;
 }
+.btn-it:hover {
+  color: #fff;
+  background-color: #2a6ec6;
+  border-color: #2665b5;
+}
 .btn-digital {
   color: #fff;
   background-color: #2ecc2e;
@@ -3108,6 +3093,11 @@ h3 {
   line-height: 35px;
   border-radius: 3px;
   margin: 0 0 0 20px;
+}
+.btn-default:hover {
+  color: #fff;
+  background-color: #84858f;
+  border-color: #797a85;
 }
 
 .header-btn {

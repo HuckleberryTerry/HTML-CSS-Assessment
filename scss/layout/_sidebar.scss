@@ -153,18 +153,18 @@
     //left:-275px;
     width:100%;
     z-index: 0;
-    @include mq('xs'){
-        left:-275px;
-    }
-    @include mq('s'){
-        left:-275px;
-    }
-    @include mq('m'){
-        left:-375px;
-    }
-    @include mq('l'){
-        left:-375px;
-    }
+    // @include mq('xs'){
+    //     left:-275px;
+    // }
+    // @include mq('s'){
+    //     left:-275px;
+    // }
+    // @include mq('m'){
+    //     left:-375px;
+    // }
+    // @include mq('l'){
+    //     left:-375px;
+    // }
 }
 #side-lined::after{
     //display:none;

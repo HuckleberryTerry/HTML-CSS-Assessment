@@ -200,6 +200,11 @@
         font-size:px-to-rem(17);
         line-height:35px;
         border-radius:3px;
+        &:hover{
+            color: #fff;
+            background-color: #2a6ec6;
+            border-color: #2665b5;
+        }
     }
     &-digital{
         color:#fff;
@@ -280,6 +285,11 @@
         line-height:35px;
         border-radius:3px;
         margin:0 0 0 20px;
+        &:hover{
+            color: #fff;
+            background-color: #84858f;
+            border-color: #797a85;
+        }
     }
 
 }
