@@ -27,6 +27,10 @@
             display:inline-flex;
         }
     }
+    &>em.pull-right{
+        margin-right:-4px;
+        margin-left:12px;
+    }
     ///===============================================================================
     /// _Welcome partial button styles
     ///===============================================================================
@@ -264,5 +268,40 @@
         cursor:pointer;
         font-size:.8rem;
     }
+    ///===============================================================================
+    /// Default button style
+    ///===============================================================================
+    &-default{
+        color:#fff;
+        background-color:#999aa2;
+        border-color:#999aa2;
+        padding:5px 15px;
+        font-size:px-to-rem(18);
+        line-height:35px;
+        border-radius:3px;
+        margin:0 0 0 20px;
+    }
 
+}
+
+.header-btn{
+    font-size:18px;
+    width:141px;
+    height:56px;
+    @include mq('s'){
+        display:none;
+    }
+    @include mq('m'){
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+    &>.icon-mouse{
+        font-size:23px;
+        margin: 0 5px 0 0;
+    }
+    &>.icon-paperplane{
+        font-size:23px;
+        margin: 0 5px 0 0;
+    }
 }

@@ -14,34 +14,35 @@
         .banner{
             &-header {
                 position: relative;
-                top: 0;
+                top: -500px;
                 right: 0;
                 bottom: 0;
                 left: 0;
                 z-index: 2;
-                display: flex;
-                justify-content: center;
-                align-content: center;
-                align-items: center;
-                overflow: hidden;
                 width:auto;
+                font-size:2.5rem;
+                line-height:3rem;
+                margin:0 0 1.25rem;
+                font-weight: 600;
                 @include mq('xs'){
-                    top: -450px;
+                    text-align: center;
                 }
                 @include mq('s'){
-                    top: -450px;
+                    text-align:center;
                 }
                 @include mq('m'){
-                    top: -450px;
-                    padding-left:15px;
-                    margin-left:27px;
-                    justify-content: flex-start;
+                    text-align: left;
+                    font-size:4rem;
+                    line-height:5rem;
                 }
                 @include mq('l'){
-                    top: -450px;
-                    padding-left:15px;
-                    margin-left:134px;
-                    justify-content: flex-start;
+                    text-align: left;
+                    font-size:4rem;
+                    line-height:5rem;
+                }
+                @media only screen and (min-width: 1261px){
+                    text-align: left;
+                    top: -490px;
                 }
             }
             &-paragraph {
@@ -50,34 +51,39 @@
                 line-height: 1.75rem;
                 font-weight: 600;
                 position: relative;
-                top: 200px;
+                top: -530px;
                 right: 0;
                 bottom: 0;
                 left: 0;
                 z-index: 4;
-                display: flex;
-                justify-content: center;
-                align-content: center;
-                align-items: center;
-                overflow: hidden;
                 width:auto;
                 @include mq('xs'){
-                    top: -440px;
+                    text-align: center;
                 }
                 @include mq('s'){
-                    top: -440px;
+                    text-align: center;
                 }
                 @include mq('m'){
-                    top: -440px;
-                    padding-left:15px;
-                    margin-left:27px;
-                    justify-content: flex-start;
+                    text-align: left;
+                    font-size:1.625rem;
+                    line-height:2.5rem;
                 }
                 @include mq('l'){
-                    top: -440px;
-                    padding-left:15px;
-                    margin-left:134px;
-                    justify-content: flex-start;
+                    text-align: left;
+                    font-size:1.625rem;
+                    line-height:2.5rem;
+                }
+                @media only screen and (min-width: 1261px){
+                    text-align: left;
+                    top: -490px;
+                }
+            }
+            &-container{
+                display:flex;
+                flex-direction:column;
+                align-items:center;
+                @include mq('m'){
+                    align-items: flex-start;
                 }
             }
         }
@@ -111,15 +117,16 @@
 .content{
     position:relative;
     height:550px;
-    z-index:0;
+    z-index:1;
+
     .img-banner{
         display:flex;
         position:relative;
         margin-left:auto;
         margin-right:auto;
         justify-content:center;
-        width:100%;
         min-height:550px;
+        width:110%;
         height:100%;
         @include mq('m'){
             height:550px;
@@ -129,6 +136,8 @@
         }
         &.one{
             margin-top:-1px;
+            margin-left:-1px;
+            margin-right:-1px;
             background-image: url('../assets/images/Banner/home-YLei.png'), linear-gradient(270deg,transparent 25%,#000);
             background-blend-mode:overlay;
             background-size: cover;
@@ -136,6 +145,8 @@
         }
         &.two{
             margin-top:-1px;
+            margin-left:-1px;
+            margin-right:-1px;
             background-image: url('../assets/images/Banner/home-O67Y.jpg'), linear-gradient(270deg,transparent 25%,#000);
             background-blend-mode:overlay;
             background-size: cover;
@@ -143,6 +154,8 @@
         }
         &.three{
             margin-top:-1px;
+            margin-left:-1px;
+            margin-right:-1px;
             background-image: url('../assets/images/Banner/home-gay8.png'), linear-gradient(270deg,transparent 25%,#000);
             background-blend-mode:overlay;
             background-size: cover;
@@ -150,6 +163,8 @@
         }
         &.four{
             margin-top:-1px;
+            margin-left:-1px;
+            margin-right: -1px;
             background-image: url('../assets/images/Banner/home-6yTp.png'), linear-gradient(270deg,transparent 25%,#000);
             background-blend-mode:overlay;
             background-size: cover;
@@ -157,6 +172,8 @@
         }
         &.five{
             margin-top:-1px;
+            margin-left:-1px;
+            margin-right:-1px;
             background-image: url('../assets/images/Banner/home-J8Xx.png'), linear-gradient(270deg,transparent 25%,#000);
             background-blend-mode:overlay;
             background-size: cover;
@@ -164,6 +181,8 @@
         }
         &.six{
             margin-top:-1px;
+            margin-left:-1px;
+            margin-right:-1px;
             background-image: url('../assets/images/Banner/home-K0pn.jpg'), linear-gradient(270deg,transparent 25%,#000);
             background-blend-mode:overlay;
             background-size: cover;
@@ -171,6 +190,8 @@
         }
         &.seven{
             margin-top:-1px;
+            margin-left:-1px;
+            margin-right:-1px;
             background-image: url('../assets/images/Banner/home-MSxH.png'), linear-gradient(270deg,transparent 25%,#000);
             background-blend-mode:overlay;
             background-size: cover;
@@ -179,36 +200,23 @@
     }
     .btn{
         max-width:250px;
-        margin-left:auto;
-        margin-right:auto;
-        display:flex;
         
         &-web{
+            display:flex;
             background-color:#926fb1;  
             height:50px;
             padding: 5px 20px;
             font-size: 1.25rem;
-            font-size: 1.25rem;
             line-height: 1.75rem;
             font-weight: 600;
             position: relative;
-            top: -375px;
+            top: -480px;
             right: 0;
             bottom: 0;
             left: 0;
             z-index: 4;
-            justify-content: center;
-            align-content: center;
-            align-items: center;
-            text-align:center;
-            @include mq('m'){
-                margin-left: 42px;
-                justify-content: flex-start;
-            }
-            @include mq('l'){
-                margin-left: 150px;
-                justify-content: flex-start;
-            }
+            align-items:center;
+            justify-content:center;
         }
     }
 }

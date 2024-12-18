@@ -1,6 +1,9 @@
 .main-navigation{
     background-color:#333645;
     position:relative;
+    .sub-menu-banner-title{
+        display:block;
+    }
     .container>ul{
         display:flex;
         flex-direction:row;
@@ -17,5 +20,277 @@
             text-decoration:none;
             line-height:1;
         }
+        &>.nav-item, &>li{
+            flex:1;
+            text-align: center;
+        }
+        &>.nav-item>a span, &>li>a span{
+            font-size:1.438rem;
+            display:block;
+            padding-bottom:10px;
+        }
+        //Navbar Buttons Colors
+        &>.nav-item.software:hover,
+        &>li.software:hover{
+            background-color:#67809f;
+        }
+        &>.nav-item.it:hover,
+        &>li.it:hover{
+            background-color:#4183d7;
+        }
+        &>.nav-item.digital:hover,
+        &>li.digital:hover{
+            background-color:#2ecc71;
+        }
+        &>.nav-item.telecoms:hover,
+        &>li.telecoms:hover{
+            background-color:#d64541;
+        }
+        &>.nav-item.web:hover,
+        &>li.web:hover{
+            background-color:#926fb1;
+        }
+        &>.nav-item.security:hover,
+        &>li.security:hover{
+            background-color:#f62459 ;
+        }
+        &>.nav-item.dev-course:hover,
+        &>li.dev-course:hover{
+            background-color:#ce4125 ;
+        }
+        //arrow hover default styling
+        &>.nav-item:hover>a:before, &>li:hover>a:before{
+            content:"";
+            position:absolute;
+            left:50%;
+            bottom:-35px;
+            transform:translateX(-50%);
+            z-index:25;
+            width:0;
+            height:0;
+            border-color:#b00 transparent transparent;
+            border-style:solid;
+            @include mq('m'){
+                border-width:35px 68px 0;
+            }
+            @include mq('l'){
+                border-width:35px 83.5px 0;
+            }
+            // @media only screen and(max-width: 992px){
+            //     border-width:35px 83.5px 0;
+            // }
+        }
+        //Arrow Colors
+        &>.nav-item.software:hover>a:before, &>li.software:hover>a:before{
+            border-color:#67809f transparent transparent;
+        }
+        &>.nav-item.it:hover>a:before, &>li.it:hover>a:before{
+            border-color:#4183d7 transparent transparent;
+        }
+        &>.nav-item.digital:hover>a:before, &>li.digital:hover>a:before{
+            border-color:#2ecc71 transparent transparent;
+        }
+        &>.nav-item.telecoms:hover>a:before, &>li.telecoms:hover>a:before{
+            border-color:#d64541 transparent transparent;
+        }
+        &>.nav-item.web:hover>a:before, &>li.web:hover>a:before{
+            border-color:#926fb1 transparent transparent;
+        }
+        &>.nav-item.security:hover>a:before, &>li.security:hover>a:before{
+            border-color:#f62459 transparent transparent;
+        }
+        &>.nav-item.dev-course:hover>a:before, &>li.dev-course:hover>a:before{
+            border-color:#ce4125 transparent transparent;
+        }
+
+        //Navbar Icon Colors
+        &>.nav-item.software>a span, &>li.software>a span{
+            color:#67809f;
+        }
+        &>.nav-item.it>a span, &>li.it>a span{
+            color:#4183d7;
+        }
+        &>.nav-item.digital>a span, &>li.digital>a span{
+            color:#2ecc71;
+        }
+        &>.nav-item.telecoms>a span, &>li.telecoms>a span{
+            color:#d64541;
+        }
+        &>.nav-item.web>a span, &>li.web>a span{
+            color:#926fb1;
+        }
+        &>.nav-item.security>a span, &>li.security>a span{
+            color:#f62459;
+        }
+        &>.nav-item.dev-course>a span, &>li.dev-course>a span{
+            color:#ce4125;
+        }
+
+        &>.nav-item>a small, &>li>a small{
+            display:block;
+            font-size:.625rem;
+            padding-bottom:1px;
+        }
+        //Sub Menu Banner Colors
+        &>.nav-item.software>.sub-menu-banner, &>li.software>.sub-menu-banner{
+            background-color:#526781;
+        }
+        &>.nav-item.it>.sub-menu-banner, &>li.it>.sub-menu-banner{
+            background-color:#286abd;
+        }
+        &>.nav-item.digital>.sub-menu-banner, &>li.digital>.sub-menu-banner{
+            background-color:#25a25a;
+        }
+        &>.nav-item.telecoms>.sub-menu-banner, &>li.telecoms>.sub-menu-banner{
+            background-color:#bc2c28;
+        }
+        &>.nav-item.web>.sub-menu-banner, &>li.web>.sub-menu-banner{
+            background-color:#79539a;
+        }
+        &>.nav-item.security>.sub-menu-banner, &>li.security>.sub-menu-banner{
+            background-color:#de093f;
+        }
+        &>.nav-item.dev-course>.sub-menu-banner, &>li.dev-course>.sub-menu-banner{
+            background-color:#a3331d;
+        }
+
+        //Link Text Underline
+        &>.nav-item>.sub-menu-banner .sub-menu li a:hover .link-text,
+        &>.nav-item>.sub-menu-banner>ul li a:hover .link-text,
+        &>.nav-item>div .sub-menu li a:hover .link-text,
+        &>li>.sub-menu-banner .sub-menu li a:hover .link-text,
+        &>li>div .sub-menu li a:hover .link-text,
+        &>li>div>ul li a:hover .link-text{
+            text-decoration: underline;
+        }
+
+        &>.nav-item>.sub-menu-banner,
+        &>.nav-item>div,
+        &>li>.sub-menu-banner,
+        &>li>div{
+            margin:0;
+            display:none;
+            position:absolute;
+            top:100%;
+            left:0;
+            min-width:100%;
+            z-index:10;
+            padding:50px 0;
+        }
+
+        &>.nav-item>.sub-menu-banner .sub-menu,
+        &>.nav-item>.sub-menu-banner>ul,
+        &>.nav-item>div .sub-menu,
+        &>.nav-item>div>ul,
+        &>li>.sub-menu-banner .sub-menu,
+        &>li>div>.sub-menu,
+        &>li>div>ul{
+            display:flex;
+            flex-wrap:wrap;
+            align-items:center;
+            margin-top:-15px;
+            list-style:none;
+            text-align:left;
+            padding:0;
+        }
+
+        &>.nav-item>.sub-menu-banner .sub-menu .sub-menu-banner-title,
+        &>.nav-item>.sub-menu-banner>ul .sub-menu-banner-title,
+        &>.nav-item>div .sub-menu .sub-menu-banner-title,
+        &>.nav-item>div>ul .sub-menu-banner-title,
+        &>li>.sub-menu-banner .sub-menu .sub-menu-banner-title,
+        &>li>.sub-menu-banner>ul .sub-menu-banner-title,
+        &>li>div> .sub-menu .sub-menu-banner-title,
+        &>li>div>ul .sub-menu-banner-title{
+            width:100%;
+            color:#fff;
+            margin-bottom:10px;
+            margin-top:15px;
+            font-weight:500;
+        }
+
+        &>.nav-item>.sub-menu-banner .sub-menu li,
+        &>.nav-item>.sub-menu-banner>ul li,
+        &>.nav-item>div .sub-menu li,
+        &>.nav-item>div>ul li,
+        &>li>.sub-menu-banner .sub-menu li,
+        &>li>.sub-menu-banner>ul li,
+        &>li>div>.sub-menu li,
+        &>li>div>ul li{
+            width:33%;
+            margin-top:15px;
+        }
+
+        &>.nav-item>.sub-menu-banner .sub-menu li a,
+        &>.nav-item>.sub-menu-banner>ul li a,
+        &>.nav-item>div .sub-menu li a,
+        &>.nav-item>div>ul li a,
+        &>li>.sub-menu-banner .sub-menu li a,
+        &>li>.sub-menu-banner>ul li a,
+        &>li>div>.sub-menu li a,
+        &>li>div>ul li a{
+            color:#fff;
+            font-size:1.2rem;
+            line-height:1.313rem;
+            padding:.625rem .938rem .625rem 0;
+            display:flex;
+            align-items:center;
+            text-transform: none;
+        }
+
+        &>.nav-item>.sub-menu-banner .sub-menu li a .link-icon-container,
+        &>.nav-item>.sub-menu-banner>ul li a .link-icon-container,
+        &>.nav-item>div .sub-menu li a .link-icon-container,
+        &>.nav-item>div>ul li a .link-icon-container,
+        &>li>.sub-menu-banner .sub-menu li a .link-icon-container,
+        &>li>.sub-menu-banner>ul li a .link-icon-container,
+        &>li>div>.sub-menu li a .link-icon-container,
+        &>li>div>ul li a .link-icon-container{
+            display:flex;
+            justify-content:left;
+            align-items:center;
+            min-width:25px;
+        }
+
+        &>.nav-item>.sub-menu-banner .sub-menu li a .link-text
+        &>.nav-item>.sub-menu-banner>ul li a .link-text,
+        &>.nav-item>div .sub-menu li a .link-text,
+        &>.nav-item>div>ul li a .link-text,
+        &>li>.sub-menu-banner .sub-menu li a .link-text,
+        &>li>.sub-menu-banner>ul li a .link-text,
+        &>li>div>.sub-menu li a .link-text,
+        &>li>div>ul li a .link-text{
+            margin-left:10px;
+        }
+
+        &>nav-item.dev-course:hover>a span,
+        &>nav-item.digital:hover>a span,
+        &>nav-item.it:hover>a span,
+        &>nav-item.security:hover>a span,
+        &>nav-item.software:hover>a span,
+        &>nav-item.telecoms:hover>a span,
+        &>nav-item.web:hover>a span,
+        &>li.dev-course:hover>a span,
+        &>li.digital:hover>a span,
+        &>li.it:hover>a span,
+        &>li.security:hover>a span,
+        &>li.software:hover>a span,
+        &>li.telecoms:hover>a span,
+        &>li.web:hover>a span{
+            color:#fff;
+        }
+
+        &>.nav-item:hover>.sub-menu-banner,
+        &>.nav-item:hover>div,
+        &>li:hover>div{
+            display:flex;
+            @include mq('m'){
+                display:block;
+            }
+        }
     }
+}
+
+.h2{
+    font-size:2rem;
 }

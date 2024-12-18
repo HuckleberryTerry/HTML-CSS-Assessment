@@ -123,6 +123,7 @@
                             line-height:px-to-rem(24);
                             font-weight:400;
                             margin:0 0 15px;
+                            min-height:3rem;
                             color:#333645;
                             @media only screen and (min-width: 768px) and (max-width: 1259px){
                                 min-height: 3rem;
@@ -261,7 +262,7 @@
 
 @include mq('s'){
     .hidden-xs{
-        display:block;
+        display:none;
         margin:0;
     }
     .visible-xs{
@@ -286,8 +287,6 @@
     }
     .float-right{
         float:right;
-        margin-left:20px;
-        margin-right:25px;
     }
 }
 
@@ -313,7 +312,13 @@
     .article{
         &-container{
             width:50%;
-            padding:0 15px;
+            //padding:0 15px;
+            &:nth-child(1){
+                padding-right:15px;
+            }
+            &:nth-child(2){
+                padding-left:15px;
+            }
         }
     }
 }
@@ -326,11 +331,24 @@
         display: none !important;
     }
 
-    .article-container{
-        width:calc(100% / 3);
-        float:left;
-        padding:0 15px;
+    .article{
+        &-container:nth-child(1){
+            width:calc(100% / 3);
+            float:left;
+            padding-right:15px;
+        }
+        &-container:nth-child(2){
+            width:calc(100% / 3);
+            float:left;
+            padding:0 8px;
+        }
+        &-container:nth-child(3){
+            width:calc(100% / 3);
+            float:left;
+            padding-left:15px
+        }
     }
+
     .container{
         width:1200px;
     }
