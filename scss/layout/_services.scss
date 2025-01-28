@@ -68,14 +68,90 @@
                                 }
                             }
                         }
-                        &.software>span.icon{
-                            background-color:#67809f;
+                        &.software{
+                            top:0;
+                            &>span.icon{
+                                background-color:#67809f;
+                            }
+                            &:hover{
+                                background-color:#67809f;
+                                color:#fff;
+                                border-color:transparent;
+                                top:-10px;
+                                transition:top .5 ease;
+                                &>span{
+                                    &.service-content-title{
+                                        color:#fff;
+                                    }
+                                    &.icon{
+                                        color:#67809f;
+                                        background-color: #fff;
+                                    }
+                                    &.service-btn-container{
+                                        &>.btn-software{
+                                            border-color:transparent;
+                                            background-color: #fff;
+                                            color:#67809f;
+                                        }
+                                    }
+                                }
+                            }
                         }
-                        &.it>span.icon{
-                            background-color:#4183d7;
+                        &.it{
+                            &>span.icon{
+                                background-color:#4183d7;
+                            }
+                            &:hover{
+                                background-color:#4183d7;
+                                color:#fff;
+                                border-color:transparent;
+                                top:-10px;
+                                transition:top .5 ease;
+                                &>span{
+                                    &.service-content-title{
+                                        color:#fff;
+                                    }
+                                    &.icon{
+                                        color:#4183d7;
+                                        background-color: #fff;
+                                    }
+                                    &.service-btn-container{
+                                        &>.btn-it{
+                                            border-color:transparent;
+                                            background-color: #fff;
+                                            color:#4183d7;
+                                        }
+                                    }
+                                }
+                            }
                         }
-                        &.digital>span.icon{
-                            background-color: #2ecc2e;
+                        &.digital{
+                            &>span.icon{
+                                background-color: #2ecc2e;
+                            }
+                            &:hover{
+                                background-color:#2ecc2e;
+                                color:#fff;
+                                border-color:transparent;
+                                top:-10px;
+                                transition:top .5 ease;
+                                &>span{
+                                    &.service-content-title{
+                                        color:#fff;
+                                    }
+                                    &.icon{
+                                        color:#2ecc2e;
+                                        background-color: #fff;
+                                    }
+                                    &.service-btn-container{
+                                        &>.btn-digital{
+                                            border-color:transparent;
+                                            background-color: #fff;
+                                            color:#2ecc2e;
+                                        }
+                                    }
+                                }
+                            }
                         }
                         &>span.icon{
                             display:block;
@@ -158,17 +234,117 @@
                                 }
                             }
                         }
-                        &.telecoms>span.icon{
-                            background-color:#d64541;
+                        &.telecoms{
+                            &>span.icon{
+                                background-color:#d64541;
+                            }
+                            &:hover{
+                                background-color:#d64541;
+                                color:#fff;
+                                border-color:transparent;
+                                top:-10px;
+                                transition:top .5 ease;
+                                &>span{
+                                    &.service-content-title{
+                                        color:#fff;
+                                    }
+                                    &.icon{
+                                        color:#d64541;
+                                        background-color: #fff;
+                                    }
+                                    &.service-btn-container{
+                                        &>.btn-telecoms{
+                                            border-color:transparent;
+                                            background-color: #fff;
+                                            color:#d64541;
+                                        }
+                                    }
+                                }
+                            }
                         }
-                        &.web>span.icon{
-                            background-color:#926fb1;
+                        &.web{
+                            &>span.icon{
+                                background-color:#926fb1;
+                            }
+                            &:hover{
+                                background-color:#926fb1;
+                                color:#fff;
+                                border-color:transparent;
+                                top:-10px;
+                                transition:top .5 ease;
+                                &>span{
+                                    &.service-content-title{
+                                        color:#fff;
+                                    }
+                                    &.icon{
+                                        color:#926fb1;
+                                        background-color: #fff;
+                                    }
+                                    &.service-btn-container{
+                                        &>.btn-web{
+                                            border-color:transparent;
+                                            background-color: #fff;
+                                            color:#926fb1;
+                                        }
+                                    }
+                                }
+                            }
                         }
-                        &.security>span.icon{
-                            background-color: #f62459;
+                        &.security{
+                            &>span.icon{
+                                background-color: #f62459;
+                            }
+                            &:hover{
+                                background-color:#f62459;
+                                color:#fff;
+                                border-color:transparent;
+                                top:-10px;
+                                transition:top .5 ease;
+                                &>span{
+                                    &.service-content-title{
+                                        color:#fff;
+                                    }
+                                    &.icon{
+                                        color:#f62459;
+                                        background-color: #fff;
+                                    }
+                                    &.service-btn-container{
+                                        &>.btn-security{
+                                            border-color:transparent;
+                                            background-color: #fff;
+                                            color:#f62459;
+                                        }
+                                    }
+                                }
+                            }
                         }
-                        &.dev-training>span.icon{
-                            background-color:#ce4125;
+                        &.dev-training{
+                            &>span.icon{
+                                background-color:#ce4125;
+                            }
+                            &:hover{
+                                background-color:#ce4125;
+                                color:#fff;
+                                border-color:transparent;
+                                top:-10px;
+                                transition:top .5 ease;
+                                &>span{
+                                    &.service-content-title{
+                                        color:#fff;
+                                    }
+                                    &.icon{
+                                        color:#ce4125;
+                                        background-color: #fff;
+                                    }
+                                    &.service-btn-container{
+                                        &>.btn-dev-training{
+                                            border-color:transparent;
+                                            background-color: #fff;
+                                            color:#ce4125;
+                                        }
+                                    }
+                                }
+                            }
                         }
                         &>span.icon{
                             display:block;
@@ -197,6 +373,9 @@
                 font-weight:600;
                 color:#333645;
                 //padding-right:15px;
+                &:hover{
+                    text-decoration: underline;
+                }
             }
         }
         &-title{

@@ -96,17 +96,18 @@
                 li{
                     & button:before{
                         color:white;
-                        padding-top:3px;
+                        padding-top:3.45px;
                         font-size:.75rem;
                     }
                     &.slick-active{
                         & button:before{
                             display:flex;
-                            padding-top:.0675rem;
+                            padding-top:.093rem;
                             border:solid 2.95px white;
                             border-radius:50%;
                             color:white;
                             justify-content:center;
+                            height:95%;
                         }
                     }
                 }
@@ -196,27 +197,6 @@
             background-blend-mode:overlay;
             background-size: cover;
             background-position: center;
-        }
-    }
-    .btn{
-        max-width:250px;
-        
-        &-web{
-            display:flex;
-            background-color:#926fb1;  
-            height:50px;
-            padding: 5px 20px;
-            font-size: 1.25rem;
-            line-height: 1.75rem;
-            font-weight: 600;
-            position: relative;
-            top: -480px;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            z-index: 4;
-            align-items:center;
-            justify-content:center;
         }
     }
 }

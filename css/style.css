@@ -726,6 +726,16 @@ label {
     margin: 0;
   }
 }
+@media (min-width: 992px) {
+  #header header .inner .row {
+    display: flex;
+  }
+}
+@media (min-width: 1260px) {
+  #header header .inner .row {
+    display: table;
+  }
+}
 #header header .inner .row > * {
   display: table-cell;
   float: none;
@@ -746,11 +756,6 @@ label {
   table-layout: fixed;
   width: 100%;
 }
-@media (min-width: 768px) {
-  #header header .inner .logo-container {
-    margin-top: -2px;
-  }
-}
 #header header .inner .logo-container .logo {
   display: table-cell;
   vertical-align: middle;
@@ -766,7 +771,12 @@ label {
 }
 @media (min-width: 992px) {
   #header header .inner .logo-container .logo img {
-    width: 375px;
+    width: 374.16px;
+  }
+}
+@media (min-width: 1260px) {
+  #header header .inner .logo-container .logo img {
+    width: 370px;
   }
 }
 #header header .inner .header-container .hamburger .btn {
@@ -834,10 +844,25 @@ label {
   align-items: center;
   width: 63px;
   height: 56px;
-  margin: 7px 0 0 20px;
+  margin: 6px 0 0 20px;
   padding: 0;
   border-radius: 3px;
   float: right;
+}
+@media (min-width: 992px) {
+  #hamburger-wrapper {
+    margin: 7px 0 0 20px;
+  }
+}
+@media (min-width: 1260px) {
+  #hamburger-wrapper {
+    margin: 6px 0 0 20px;
+  }
+}
+#hamburger-wrapper:hover {
+  color: #fff;
+  background-color: #22242e;
+  border-color: #191a22;
 }
 
 .hamburger {
@@ -899,7 +924,7 @@ label {
 }
 
 .form-control {
-  height: 56px;
+  height: 47px;
   padding: 5px 15px;
   font-size: 14px;
   line-height: 1.42857143;
@@ -908,12 +933,23 @@ label {
 @media (min-width: 768px) {
   .form-control {
     width: 100%;
+    height: 56px;
     background-color: #fff;
     background-image: none;
     border: 1px solid #e5e5e5;
     box-shadow: inset 1px 1px rgba(0, 0, 0, 0.075);
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     border-color: #ccc;
+  }
+}
+@media (min-width: 992px) {
+  .form-control {
+    height: 56px;
+  }
+}
+@media (min-width: 1260px) {
+  .form-control {
+    height: 56px;
   }
 }
 
@@ -930,7 +966,7 @@ input {
 }
 @media (min-width: 1260px) {
   #header .header-container {
-    width: 27%;
+    width: 26%;
   }
 }
 @media (min-width: 992px) {
@@ -973,9 +1009,11 @@ input {
     align-items: flex-end;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1260px) {
   .search-form-wrapper--tablet {
     width: auto;
+    padding-left: 2px;
+    margin-top: -1px;
   }
 }
 
@@ -1005,9 +1043,17 @@ input {
   color: #fff;
   float: right;
 }
+.search-form-wrapper--tablet > .search-form button:hover {
+  background-color: #7e808a;
+}
 @media (min-width: 992px) {
   .search-form-wrapper--tablet > .search-form button {
     border-radius: 3px;
+  }
+}
+@media (min-width: 1260px) {
+  .search-form-wrapper--tablet > .search-form button {
+    border-radius: 0 3px 3px 0;
   }
 }
 @media (min-width: 768px) {
@@ -1107,14 +1153,74 @@ input {
   line-height: 1.25rem;
   margin-bottom: 13px;
 }
+#middle .service-grid .service-content-upper .block.software {
+  top: 0;
+}
 #middle .service-grid .service-content-upper .block.software > span.icon {
   background-color: #67809f;
+}
+#middle .service-grid .service-content-upper .block.software:hover {
+  background-color: #67809f;
+  color: #fff;
+  border-color: transparent;
+  top: -10px;
+  transition: top 0.5 ease;
+}
+#middle .service-grid .service-content-upper .block.software:hover > span.service-content-title {
+  color: #fff;
+}
+#middle .service-grid .service-content-upper .block.software:hover > span.icon {
+  color: #67809f;
+  background-color: #fff;
+}
+#middle .service-grid .service-content-upper .block.software:hover > span.service-btn-container > .btn-software {
+  border-color: transparent;
+  background-color: #fff;
+  color: #67809f;
 }
 #middle .service-grid .service-content-upper .block.it > span.icon {
   background-color: #4183d7;
 }
+#middle .service-grid .service-content-upper .block.it:hover {
+  background-color: #4183d7;
+  color: #fff;
+  border-color: transparent;
+  top: -10px;
+  transition: top 0.5 ease;
+}
+#middle .service-grid .service-content-upper .block.it:hover > span.service-content-title {
+  color: #fff;
+}
+#middle .service-grid .service-content-upper .block.it:hover > span.icon {
+  color: #4183d7;
+  background-color: #fff;
+}
+#middle .service-grid .service-content-upper .block.it:hover > span.service-btn-container > .btn-it {
+  border-color: transparent;
+  background-color: #fff;
+  color: #4183d7;
+}
 #middle .service-grid .service-content-upper .block.digital > span.icon {
   background-color: #2ecc2e;
+}
+#middle .service-grid .service-content-upper .block.digital:hover {
+  background-color: #2ecc2e;
+  color: #fff;
+  border-color: transparent;
+  top: -10px;
+  transition: top 0.5 ease;
+}
+#middle .service-grid .service-content-upper .block.digital:hover > span.service-content-title {
+  color: #fff;
+}
+#middle .service-grid .service-content-upper .block.digital:hover > span.icon {
+  color: #2ecc2e;
+  background-color: #fff;
+}
+#middle .service-grid .service-content-upper .block.digital:hover > span.service-btn-container > .btn-digital {
+  border-color: transparent;
+  background-color: #fff;
+  color: #2ecc2e;
 }
 #middle .service-grid .service-content-upper .block > span.icon {
   display: block;
@@ -1196,14 +1302,90 @@ input {
 #middle .service-grid .service-content-lower .block.telecoms > span.icon {
   background-color: #d64541;
 }
+#middle .service-grid .service-content-lower .block.telecoms:hover {
+  background-color: #d64541;
+  color: #fff;
+  border-color: transparent;
+  top: -10px;
+  transition: top 0.5 ease;
+}
+#middle .service-grid .service-content-lower .block.telecoms:hover > span.service-content-title {
+  color: #fff;
+}
+#middle .service-grid .service-content-lower .block.telecoms:hover > span.icon {
+  color: #d64541;
+  background-color: #fff;
+}
+#middle .service-grid .service-content-lower .block.telecoms:hover > span.service-btn-container > .btn-telecoms {
+  border-color: transparent;
+  background-color: #fff;
+  color: #d64541;
+}
 #middle .service-grid .service-content-lower .block.web > span.icon {
   background-color: #926fb1;
+}
+#middle .service-grid .service-content-lower .block.web:hover {
+  background-color: #926fb1;
+  color: #fff;
+  border-color: transparent;
+  top: -10px;
+  transition: top 0.5 ease;
+}
+#middle .service-grid .service-content-lower .block.web:hover > span.service-content-title {
+  color: #fff;
+}
+#middle .service-grid .service-content-lower .block.web:hover > span.icon {
+  color: #926fb1;
+  background-color: #fff;
+}
+#middle .service-grid .service-content-lower .block.web:hover > span.service-btn-container > .btn-web {
+  border-color: transparent;
+  background-color: #fff;
+  color: #926fb1;
 }
 #middle .service-grid .service-content-lower .block.security > span.icon {
   background-color: #f62459;
 }
+#middle .service-grid .service-content-lower .block.security:hover {
+  background-color: #f62459;
+  color: #fff;
+  border-color: transparent;
+  top: -10px;
+  transition: top 0.5 ease;
+}
+#middle .service-grid .service-content-lower .block.security:hover > span.service-content-title {
+  color: #fff;
+}
+#middle .service-grid .service-content-lower .block.security:hover > span.icon {
+  color: #f62459;
+  background-color: #fff;
+}
+#middle .service-grid .service-content-lower .block.security:hover > span.service-btn-container > .btn-security {
+  border-color: transparent;
+  background-color: #fff;
+  color: #f62459;
+}
 #middle .service-grid .service-content-lower .block.dev-training > span.icon {
   background-color: #ce4125;
+}
+#middle .service-grid .service-content-lower .block.dev-training:hover {
+  background-color: #ce4125;
+  color: #fff;
+  border-color: transparent;
+  top: -10px;
+  transition: top 0.5 ease;
+}
+#middle .service-grid .service-content-lower .block.dev-training:hover > span.service-content-title {
+  color: #fff;
+}
+#middle .service-grid .service-content-lower .block.dev-training:hover > span.icon {
+  color: #ce4125;
+  background-color: #fff;
+}
+#middle .service-grid .service-content-lower .block.dev-training:hover > span.service-btn-container > .btn-dev-training {
+  border-color: transparent;
+  background-color: #fff;
+  color: #ce4125;
 }
 #middle .service-grid .service-content-lower .block > span.icon {
   display: block;
@@ -1230,6 +1412,9 @@ input {
   font-size: 2.25rem;
   font-weight: 600;
   color: #333645;
+}
+#middle .service-view a:hover {
+  text-decoration: underline;
 }
 #middle .service-title {
   width: 100%;
@@ -1847,16 +2032,17 @@ footer .footer-row .icon-facebook, footer .footer-row .icon-instagram, footer .f
 }
 #banner .content .slick-dots li button:before {
   color: white;
-  padding-top: 3px;
+  padding-top: 3.45px;
   font-size: 0.75rem;
 }
 #banner .content .slick-dots li.slick-active button:before {
   display: flex;
-  padding-top: 0.0675rem;
+  padding-top: 0.093rem;
   border: solid 2.95px white;
   border-radius: 50%;
   color: white;
   justify-content: center;
+  height: 95%;
 }
 
 .content {
@@ -1947,26 +2133,6 @@ footer .footer-row .icon-facebook, footer .footer-row .icon-instagram, footer .f
   background-size: cover;
   background-position: center;
 }
-.content .btn {
-  max-width: 250px;
-}
-.content .btn-web {
-  display: flex;
-  background-color: #926fb1;
-  height: 50px;
-  padding: 5px 20px;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  font-weight: 600;
-  position: relative;
-  top: -480px;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 4;
-  align-items: center;
-  justify-content: center;
-}
 
 #middle {
   background-color: white;
@@ -2000,6 +2166,9 @@ footer .footer-row .icon-facebook, footer .footer-row .icon-instagram, footer .f
   justify-content: space-between;
   color: #000;
   margin: 0 -15px;
+}
+.article .latest-article .article-title .container .heading-container > h3 > a:hover {
+  text-decoration: underline;
 }
 .article .latest-article .article-title .container h2 {
   font-size: 2.25rem;
@@ -2046,6 +2215,15 @@ footer .footer-row .icon-facebook, footer .footer-row .icon-instagram, footer .f
   position: relative;
   top: 0;
   transition: 0.5s ease;
+}
+.article .latest-article .article-list-item.bus-dev:hover {
+  top: -10px;
+}
+.article .latest-article .article-list-item.digital:hover {
+  top: -10px;
+}
+.article .latest-article .article-list-item.web:hover {
+  top: -10px;
 }
 .article .latest-article .article-list-item .img-container {
   position: relative;
@@ -2188,6 +2366,9 @@ footer .footer-row .icon-facebook, footer .footer-row .icon-instagram, footer .f
 .latest-view h3 {
   font-size: 1.625rem;
 }
+.latest-view h3 > a:hover {
+  text-decoration: underline;
+}
 .latest-view a:not(.btn) {
   font-weight: 600;
   color: #333645;
@@ -2294,7 +2475,7 @@ h3 {
 }
 @media (min-width: 992px) {
   .side-bar {
-    width: 375px;
+    width: 350px;
   }
 }
 @media (min-width: 1260px) {
@@ -2349,6 +2530,9 @@ h3 {
 .side-bar > ul > li > a + .sub-menu > ul > li > a::before {
   content: "»";
   padding-right: 15px;
+}
+.side-bar > ul > li:hover > a {
+  background-color: hsla(0, 0%, 100%, 0.05);
 }
 .side-bar > .main {
   padding: 21px;
@@ -2877,12 +3061,20 @@ h3 {
   background-color: #272936;
   overflow: hidden;
 }
+.btn-primary--inverse-1:hover {
+  color: #fff;
+  background-color: #121318;
+}
 .btn-primary--inverse-2 {
   border-radius: 6px;
   padding: 10px 30px;
   font-size: 20px;
   background-color: #272936;
   overflow: hidden;
+}
+.btn-primary--inverse-2:hover {
+  color: #fff;
+  background-color: #121318;
 }
 .btn-google {
   background-color: #4387f6;
@@ -2891,6 +3083,9 @@ h3 {
   padding: 10px 30px;
   font-size: 20px;
   overflow: hidden;
+}
+.btn-google:hover {
+  background-color: #166af4;
 }
 .btn-trustpilot {
   background-color: #00b67b;
@@ -2902,6 +3097,9 @@ h3 {
   padding: 10px 30px;
   font-size: 20px;
   overflow: hidden;
+}
+.btn-trustpilot:hover {
+  background-color: #009b69;
 }
 @media only screen and (min-width: 767px) {
   .btn > em {
@@ -3102,7 +3300,6 @@ h3 {
 
 .header-btn {
   font-size: 18px;
-  width: 141px;
   height: 56px;
 }
 @media (min-width: 768px) {
@@ -3124,4 +3321,24 @@ h3 {
 .header-btn > .icon-paperplane {
   font-size: 23px;
   margin: 0 5px 0 0;
+}
+
+.btn-lg {
+  font-family: "Poppins", sans-serif;
+  max-width: 250px;
+  top: -480px;
+  line-height: 50px;
+  height: auto;
+  padding: 5px 20px;
+  font-size: 1.25rem;
+  position: relative;
+  display: flex;
+  z-index: 4;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .btn-lg {
+    top: -407px;
+  }
 }/*# sourceMappingURL=style.css.map */

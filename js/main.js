@@ -18,7 +18,7 @@ $(document).ready(function(){
         pauseOnDotsHover:   true,
         pauseOnHover:       true,
         pauseOnFocus:       true,
-        autoplay:           true
+        //autoplay:           true
     });
     $('.description').slick({
         arrows:             false,

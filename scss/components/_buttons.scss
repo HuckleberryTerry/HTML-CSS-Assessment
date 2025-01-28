@@ -41,6 +41,10 @@
             font-size:20px;
             background-color:#272936;
             overflow:hidden;
+            &:hover{
+                color: #fff;
+                background-color: #121318;
+            }
         }
         &--inverse-2{
             border-radius:6px;
@@ -48,6 +52,10 @@
             font-size:20px;
             background-color:#272936;
             overflow:hidden;
+            &:hover{
+                color: #fff;
+                background-color: #121318;
+            }
         }
     }
     &-google{
@@ -57,6 +65,9 @@
         padding: 10px 30px;
         font-size: 20px;
         overflow:hidden;
+        &:hover{
+            background-color:#166af4;
+        }
     }
     &-trustpilot{
         background-color:#00b67b;
@@ -67,6 +78,9 @@
         padding: 10px 30px;
         font-size: 20px;
         overflow:hidden;
+        &:hover{
+            background-color:#009b69;
+        }
     }
 
     @media only screen and (min-width:767px){
@@ -296,7 +310,7 @@
 
 .header-btn{
     font-size:18px;
-    width:141px;
+    // width:141px;
     height:56px;
     @include mq('s'){
         display:none;
@@ -313,5 +327,23 @@
     &>.icon-paperplane{
         font-size:23px;
         margin: 0 5px 0 0;
+    }
+}
+
+.btn-lg{
+    font-family: 'Poppins', sans-serif;
+    max-width:250px;
+    top: -480px;
+    line-height:50px;
+    height:auto;
+    padding:5px 20px;
+    font-size:1.25rem;
+    position: relative;
+    display:flex;
+    z-index: 4;
+    align-items:center;
+    justify-content:center;
+    @include mq('s'){
+        top:-407px;
     }
 }
