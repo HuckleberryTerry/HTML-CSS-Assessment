@@ -11,6 +11,13 @@
         margin-right:auto;
         margin-left:auto;
         //text-align:center;
+        .slick-list{
+            .slick-dots{
+                &>li>button{
+                    display:flex;
+                }
+            }
+        }
         .banner{
             &-header {
                 position: relative;
@@ -96,7 +103,7 @@
                 li{
                     & button:before{
                         color:white;
-                        padding-top:3.45px;
+                        padding-top:3.5px;
                         font-size:.75rem;
                     }
                     &.slick-active{

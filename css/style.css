@@ -1127,6 +1127,15 @@ input {
     width: 32%;
     padding: 0;
   }
+  #middle .service-grid .service-content-upper--software {
+    margin-right: 15px;
+  }
+  #middle .service-grid .service-content-upper--it {
+    margin: 0 15px;
+  }
+  #middle .service-grid .service-content-upper--digital {
+    margin-left: 15px;
+  }
 }
 #middle .service-grid .service-content-upper .block {
   margin-top: 30px;
@@ -1243,7 +1252,7 @@ input {
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 47.7%;
+    max-width: 50%;
     justify-content: center;
   }
 }
@@ -1252,14 +1261,14 @@ input {
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 46.8%;
+    max-width: 50%;
     justify-content: center;
   }
 }
 @media (min-width: 1260px) {
   #middle .service-grid .service-content-lower {
     display: flex;
-    max-width: 268.7px;
+    max-width: 270px;
   }
 }
 #middle .service-grid .service-content-lower .block {
@@ -1297,6 +1306,24 @@ input {
   line-height: 1.25rem;
   margin-bottom: 13px;
 }
+#middle .service-grid .service-content-lower .block.telecoms {
+  margin-right: 0;
+}
+@media (min-width: 768px) {
+  #middle .service-grid .service-content-lower .block.telecoms {
+    margin-right: 15px;
+  }
+}
+@media (min-width: 992px) {
+  #middle .service-grid .service-content-lower .block.telecoms {
+    margin-right: 15px;
+  }
+}
+@media (min-width: 1260px) {
+  #middle .service-grid .service-content-lower .block.telecoms {
+    margin-right: 0;
+  }
+}
 #middle .service-grid .service-content-lower .block.telecoms > span.icon {
   background-color: #d64541;
 }
@@ -1318,6 +1345,24 @@ input {
   border-color: transparent;
   background-color: #fff;
   color: #d64541;
+}
+#middle .service-grid .service-content-lower .block.web {
+  margin-left: 0;
+}
+@media (min-width: 768px) {
+  #middle .service-grid .service-content-lower .block.web {
+    margin-left: 15px;
+  }
+}
+@media (min-width: 992px) {
+  #middle .service-grid .service-content-lower .block.web {
+    margin-left: 15px;
+  }
+}
+@media (min-width: 1260px) {
+  #middle .service-grid .service-content-lower .block.web {
+    margin-left: 0;
+  }
 }
 #middle .service-grid .service-content-lower .block.web > span.icon {
   background-color: #926fb1;
@@ -1341,6 +1386,24 @@ input {
   background-color: #fff;
   color: #926fb1;
 }
+#middle .service-grid .service-content-lower .block.security {
+  margin-right: 0;
+}
+@media (min-width: 768px) {
+  #middle .service-grid .service-content-lower .block.security {
+    margin-right: 15px;
+  }
+}
+@media (min-width: 992px) {
+  #middle .service-grid .service-content-lower .block.security {
+    margin-right: 15px;
+  }
+}
+@media (min-width: 1260px) {
+  #middle .service-grid .service-content-lower .block.security {
+    margin-right: 0;
+  }
+}
 #middle .service-grid .service-content-lower .block.security > span.icon {
   background-color: #f62459;
 }
@@ -1362,6 +1425,24 @@ input {
   border-color: transparent;
   background-color: #fff;
   color: #f62459;
+}
+#middle .service-grid .service-content-lower .block.dev-training {
+  margin-left: 0;
+}
+@media (min-width: 768px) {
+  #middle .service-grid .service-content-lower .block.dev-training {
+    margin-left: 15px;
+  }
+}
+@media (min-width: 992px) {
+  #middle .service-grid .service-content-lower .block.dev-training {
+    margin-left: 15px;
+  }
+}
+@media (min-width: 1260px) {
+  #middle .service-grid .service-content-lower .block.dev-training {
+    margin-left: 0;
+  }
 }
 #middle .service-grid .service-content-lower .block.dev-training > span.icon {
   background-color: #ce4125;
@@ -1432,16 +1513,6 @@ input {
 @media (max-width: 767px) {
   #middle .container-lower {
     padding: 0;
-  }
-}
-@media (min-width: 768px) {
-  #middle .container-lower {
-    justify-content: space-between;
-  }
-}
-@media (min-width: 992px) {
-  #middle .container-lower {
-    justify-content: space-between;
   }
 }
 #middle .heading-container {
@@ -1923,6 +1994,9 @@ footer .footer-row .icon-facebook, footer .footer-row .icon-instagram, footer .f
   margin-right: auto;
   margin-left: auto;
 }
+#banner .content .slick-list .slick-dots > li > button {
+  display: flex;
+}
 #banner .content .banner-header {
   position: relative;
   top: -500px;
@@ -2027,7 +2101,7 @@ footer .footer-row .icon-facebook, footer .footer-row .icon-instagram, footer .f
 }
 #banner .content .slick-dots li button:before {
   color: white;
-  padding-top: 3.45px;
+  padding-top: 3.5px;
   font-size: 0.75rem;
 }
 #banner .content .slick-dots li.slick-active button:before {
@@ -2245,6 +2319,7 @@ footer .footer-row .icon-facebook, footer .footer-row .icon-instagram, footer .f
   top: 10px;
 }
 .article .latest-article .article-list-item .block:not(top) {
+  margin-top: -3px;
   border-top: 0;
   border-radius: 0 0 3px 3px;
 }

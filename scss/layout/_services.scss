@@ -41,6 +41,15 @@
                         width:32%;
                         padding:0;
                         //margin-left:10px;
+                        &--software{
+                            margin-right:15px;
+                        }
+                        &--it{
+                            margin:0 15px;
+                        }
+                        &--digital{
+                            margin-left:15px;
+                        }
                     }
                     & .block{
                         margin-top:30px;
@@ -178,7 +187,7 @@
                         display:inline-flex;
                         flex-direction:row;
                         flex-wrap:wrap;
-                        max-width:47.7%;
+                        max-width:50%;
                         justify-content: center;
                         //margin-left:1.65%;
                         // grid-template-columns: 340px;
@@ -188,14 +197,14 @@
                         display:inline-flex;
                         flex-direction:row;
                         flex-wrap:wrap;
-                        max-width:46.8%;
+                        max-width:50%;
                         justify-content: center;
                         // grid-template-columns: 340px;
                         // grid-template-rows:[row1-start] 320px [row1-end] auto;
                     }
                     @include mq('l'){
                         display:flex;
-                        max-width:268.7px;
+                        max-width:270px;
                     }
                     & .block{
                         margin-top:30px;
@@ -235,6 +244,16 @@
                             }
                         }
                         &.telecoms{
+                            margin-right:0;
+                            @include mq('s'){
+                                margin-right:15px;
+                            }
+                            @include mq('m'){
+                                margin-right:15px;
+                            }
+                            @include mq('l'){
+                                margin-right:0;
+                            }
                             &>span.icon{
                                 background-color:#d64541;
                             }
@@ -263,6 +282,16 @@
                             }
                         }
                         &.web{
+                            margin-left:0;
+                            @include mq('s'){
+                                margin-left:15px;
+                            }
+                            @include mq('m'){
+                                margin-left:15px;
+                            }
+                            @include mq('l'){
+                                margin-left:0;
+                            }
                             &>span.icon{
                                 background-color:#926fb1;
                             }
@@ -291,6 +320,16 @@
                             }
                         }
                         &.security{
+                            margin-right:0;
+                            @include mq('s'){
+                                margin-right:15px;
+                            }
+                            @include mq('m'){
+                                margin-right:15px;
+                            }
+                            @include mq('l'){
+                                margin-right:0;
+                            }
                             &>span.icon{
                                 background-color: #f62459;
                             }
@@ -319,6 +358,16 @@
                             }
                         }
                         &.dev-training{
+                            margin-left:0;
+                            @include mq('s'){
+                                margin-left:15px;
+                            }
+                            @include mq('m'){
+                                margin-left:15px;
+                            }
+                            @include mq('l'){
+                                margin-left:0;
+                            }
                             &>span.icon{
                                 background-color:#ce4125;
                             }
@@ -402,12 +451,12 @@
             @include mq('xs'){
                 padding:0;
             }
-            @include mq('s'){
-                justify-content:space-between;
-            }
-            @include mq('m'){
-                justify-content:space-between;
-            }
+            // @include mq('s'){
+            //     justify-content:space-between;
+            // }
+            // @include mq('m'){
+            //     justify-content:space-between;
+            // }
         }
     }
     .heading-container{
