@@ -8,6 +8,11 @@ const $cookies_accept = $('.btn-accept-cookies');
 const $cookies_manage = $('.btn-cookie-settings');
 const $cookies_settings = $('.btn-change-settings');
 
+const $accred_Child = $('.partner');
+
+const $clients_client = $('.client');
+
+const $articles_latest = $('.latest-article');
 
 let prevScrollPos = window.scrollY;
 //--------------------Slick Carousel: Banner---------------------//
@@ -20,23 +25,24 @@ $(document).ready(function(){
         pauseOnFocus:       true,
         //autoplay:           true
     });
-    $('.description').slick({
-        arrows:             false,
-        dots:               false,
-        //autoplay:           true,
-        slidesToShow:       3,
-        slidesToScroll:     1,
-        infinite:           true,
-        variableWidth:      true,
-        swipe:              false,
-        draggable:          false,
-        centerMode:         true
-    });
+    // $('.description').slick({
+    //     arrows:             false,
+    //     dots:               false,
+    //     //autoplay:           true,
+    //     slidesToShow:       3,
+    //     slidesToScroll:     1,
+    //     infinite:           true,
+    //     variableWidth:      true,
+    //     swipe:              false,
+    //     draggable:          false,
+    //     centerMode:         true
+    // });
     $('.clients-banner').slick({
         slide:              '.client',
         arrows:             false,
         dots:               false,
-        //autoplay:           true,
+        autoplay:           true,
+        autoplaySpeed:      30,
         slidesToShow:       3,
         slidesToScroll:     1,
         infinite:           true,
@@ -182,7 +188,6 @@ $hammedBurger.on('click', function(event){
 // });
 
 //Accreditations: Image Replacement Mouse-Enter
-const $accred_Child = $('.partner');
 $accred_Child.on('mouseenter', function(){
     console.log($(this).data('slickIndex'));
     let $accred_nthChild = $(this).data('slickIndex');
@@ -271,6 +276,20 @@ $accred_Child.on('mouseleave', function(){
     else{
         console.log('Something has gone wrong');
     }
+});
+
+
+//Clients: On MouseEnter Disable Mouse Events for articles
+
+$clients_client.on('mouseenter', function(){
+    $articles_latest.css('pointer-events', 'none');
+    //$('.description').css('height', '500px');
+});
+
+//Clients: On MouseLeave Enable Mouse Events for articles
+$clients_client.on('mouseleave', function(){
+    $articles_latest.css('pointer-events', 'all');
+    //$('.description').css('height', '500px');
 });
 
 

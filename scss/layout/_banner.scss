@@ -103,11 +103,12 @@
                         & button:before{
                             display:flex;
                             padding-top:.093rem;
+                            padding-right:0.05rem;
+                            padding-left:0.05rem;
                             border:solid 2.95px white;
                             border-radius:50%;
                             color:white;
                             justify-content:center;
-                            height:95%;
                         }
                     }
                 }

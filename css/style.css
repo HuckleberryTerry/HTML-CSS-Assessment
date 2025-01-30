@@ -1135,7 +1135,6 @@ input {
   position: relative;
   top: 0;
   transition: 0.5s ease;
-  overflow: hidden;
 }
 #middle .service-grid .service-content-upper .block > span {
   display: block;
@@ -1270,7 +1269,6 @@ input {
   position: relative;
   top: 0;
   transition: 0.5s ease;
-  overflow: hidden;
 }
 @media (min-width: 768px) {
   #middle .service-grid .service-content-lower .block.security {
@@ -1423,9 +1421,6 @@ input {
   font-size: 2.75rem;
   font-weight: 400;
   color: #333645;
-  overflow: hidden;
-}
-#middle .container {
   overflow: hidden;
 }
 #middle .container-lower {
@@ -2038,11 +2033,12 @@ footer .footer-row .icon-facebook, footer .footer-row .icon-instagram, footer .f
 #banner .content .slick-dots li.slick-active button:before {
   display: flex;
   padding-top: 0.093rem;
+  padding-right: 0.05rem;
+  padding-left: 0.05rem;
   border: solid 2.95px white;
   border-radius: 50%;
   color: white;
   justify-content: center;
-  height: 95%;
 }
 
 .content {
@@ -2138,9 +2134,6 @@ footer .footer-row .icon-facebook, footer .footer-row .icon-instagram, footer .f
   background-color: white;
 }
 
-.article .section {
-  overflow: hidden;
-}
 .article a:not(.btn) {
   font-weight: 600;
   color: #333645;
@@ -2148,6 +2141,9 @@ footer .footer-row .icon-facebook, footer .footer-row .icon-instagram, footer .f
 .article strong:not(.btn) {
   font-weight: 600;
   color: #333645;
+}
+.article .latest-article {
+  padding-bottom: 50px;
 }
 .article .latest-article .container {
   margin-right: auto;
@@ -2195,7 +2191,6 @@ footer .footer-row .icon-facebook, footer .footer-row .icon-instagram, footer .f
 .article .latest-article .article-list .row {
   display: flex;
   flex-wrap: wrap;
-  overflow: hidden;
 }
 .article .latest-article .article-list .row > * {
   display: flex;
@@ -2650,22 +2645,30 @@ h3 {
 .clients-banner .client {
   display: flex;
   margin-left: 50px;
+  justify-content: center;
 }
-.clients-banner .client > img {
+.clients-banner .client:hover .description {
+  display: block;
+}
+.clients-banner .client > .client-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70px;
+}
+.clients-banner .client > .client-image > img {
   max-height: 70px;
   max-width: 200px;
   filter: grayscale(1);
   padding: 0 20px;
 }
-.clients-banner .client > img:hover {
+.clients-banner .client > .client-image > img:hover {
   filter: grayscale(0);
 }
 .clients-banner .description {
   display: none;
   position: absolute;
   bottom: 100%;
-  left: -200px;
-  right: -200px;
 }
 .clients-banner .description .box {
   background-color: #333645;
@@ -2673,7 +2676,12 @@ h3 {
   padding: 20px;
   font-size: 0.875rem;
   max-width: 280px;
-  margin: 0 0 50px;
+  width: 280px;
+  margin: 0 100px 50px;
+  text-align: center;
+}
+.clients-banner .description .box .btn {
+  margin-top: 11px;
 }
 .clients-banner .description .box h3 {
   position: relative;
@@ -2686,25 +2694,44 @@ h3 {
   font-size: 0.8125rem;
   line-height: 1.375rem;
   margin-bottom: 0;
+  margin-top: 0;
+}
+.clients-banner .description .box p a {
+  font-weight: 600;
+  color: #fff;
+}
+.clients-banner .description .box p a:hover {
+  text-decoration: underline;
 }
 .clients-banner .description .box .arrow {
   position: absolute;
-  left: 3%;
+  left: 50%;
+  bottom: 12px;
   margin-left: -36px;
 }
 .clients-banner .description .box .arrow::after {
   content: "";
   margin: auto;
   display: inline-block;
-  border-color: #333645;
+  border-color: #333645 transparent transparent;
   border-style: solid;
   border-width: 35px 36px 0;
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
+}
+.clients-banner .description .box-no-description > p {
+  display: none;
+}
+.clients-banner .description .box-no-description > h3 {
+  padding: 0;
+}
+.clients-banner .clients-container {
+  overflow-x: clip;
 }
 .clients-banner .slick-track {
   display: flex;
   align-items: center;
+}
+.clients-banner .slick-list {
+  overflow: visible;
 }
 
 .partners {
@@ -3097,6 +3124,7 @@ h3 {
   padding: 10px 30px;
   font-size: 20px;
   overflow: hidden;
+  align-items: center;
 }
 .btn-trustpilot:hover {
   background-color: #009b69;
@@ -3110,7 +3138,7 @@ h3 {
     margin-left: 12px;
   }
   .btn-google {
-    margin-top: 20px;
+    margin-top: 26px;
   }
   .btn-trustpilot {
     margin-top: 20px;
