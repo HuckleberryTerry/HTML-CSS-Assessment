@@ -134,11 +134,14 @@
     padding: 0;
     border-radius:3px;
     float:right;
+    @include mq('s'){
+        margin:7px 0 0 auto;
+    }
     @include mq('m'){
-        margin:7px 0 0 20px;
+        margin:7px 0 0 auto;
     }
     @include mq('l'){
-        margin:6px 0 0 20px;
+        margin:6px 0 0 auto;
     }
 
     &:hover{

@@ -849,14 +849,19 @@ label {
   border-radius: 3px;
   float: right;
 }
+@media (min-width: 768px) {
+  #hamburger-wrapper {
+    margin: 7px 0 0 auto;
+  }
+}
 @media (min-width: 992px) {
   #hamburger-wrapper {
-    margin: 7px 0 0 20px;
+    margin: 7px 0 0 auto;
   }
 }
 @media (min-width: 1260px) {
   #hamburger-wrapper {
-    margin: 6px 0 0 20px;
+    margin: 6px 0 0 auto;
   }
 }
 #hamburger-wrapper:hover {
@@ -1784,7 +1789,6 @@ footer .footer-row .icon-facebook, footer .footer-row .icon-instagram, footer .f
   padding-top: 7px;
   width: 100%;
   justify-content: space-between;
-  height: 45px;
 }
 @media (max-width: 767px) {
   .footer-bottom {
@@ -2454,7 +2458,6 @@ footer .footer-row .icon-facebook, footer .footer-row .icon-instagram, footer .f
 }
 @media (min-width: 768px) {
   .hidden-xs {
-    display: none;
     margin: 0;
   }
   .visible-xs {
@@ -2782,7 +2785,7 @@ h3 {
 .clients-banner .description .box .arrow {
   position: absolute;
   left: 50%;
-  bottom: 12px;
+  bottom: 13px;
   margin-left: -36px;
 }
 .clients-banner .description .box .arrow::after {
