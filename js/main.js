@@ -41,7 +41,7 @@ $(document).ready(function(){
         slide:              '.client',
         arrows:             false,
         dots:               false,
-        // autoplay:           true,
+        autoplay:           true,
         // autoplaySpeed:      30,
         slidesToShow:       3,
         slidesToScroll:     1,
