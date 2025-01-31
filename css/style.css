@@ -844,7 +844,7 @@ label {
   align-items: center;
   width: 63px;
   height: 56px;
-  margin: 6px 0 0 20px;
+  margin: 6px 0 7px 20px;
   padding: 0;
   border-radius: 3px;
   float: right;
@@ -1252,7 +1252,7 @@ input {
   width: 100%;
   grid-template-rows: [row1-start] 100% [row1-end] auto;
 }
-@media only screen and (min-width: 759px) {
+@media only screen and (min-width: 768px) {
   #middle .service-grid .service-content-lower {
     display: inline-flex;
     flex-direction: row;
@@ -1858,6 +1858,9 @@ footer .footer-row .icon-facebook, footer .footer-row .icon-instagram, footer .f
 .footer-bottom .container .license > ul li a {
   text-decoration: none;
   color: #fff;
+}
+.footer-bottom .container .license > ul li a:hover {
+  text-decoration: underline;
 }
 
 .welcome-background {

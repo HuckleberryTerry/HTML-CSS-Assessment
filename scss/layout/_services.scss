@@ -183,7 +183,7 @@
                     // padding-left:15px;
                     // padding-right:15px;
                     grid-template-rows:[row1-start] 100% [row1-end] auto;
-                    @media only screen and (min-width:759px){
+                    @media only screen and (min-width:768px){
                         display:inline-flex;
                         flex-direction:row;
                         flex-wrap:wrap;
