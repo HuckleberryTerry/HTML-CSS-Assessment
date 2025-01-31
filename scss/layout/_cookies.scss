@@ -15,6 +15,15 @@
     justify-content:center;
     padding:30px;
     .modal-dialogue{
+        @include mq('s'){
+            width:600px;
+        }
+        @include mq('m'){
+            width:600px;
+        }
+        @include mq('l'){
+            width:600px;
+        }
         margin:auto;
     }
 }
@@ -42,6 +51,11 @@
     &-body{
         position:relative;
         padding:20px;
+        &>p{
+            line-height:1.875rem;
+            margin-bottom:25px;
+            margin-top:0;
+        }
         a{
             color:#333645;
 
@@ -52,13 +66,19 @@
             display:flex;
             flex-wrap:wrap;
             justify-content:center;
-            //margin:0 15px;
+            margin:0 5px;
             padding:20px 0;
             text-align:right;
             border-top:1px solid #e5e5e5;
             &>*{
                 flex:0 0 auto;
                 max-width:100%;
+                @include mq('s'){
+                    width:50%;
+                }
+                @include mq('m'){
+                    width:50%;
+                }
             }
         }
     }
@@ -69,6 +89,12 @@
         padding-right:15px;
         width:100%;
         &--top{
+            @include mq('s'){
+                margin-bottom:0;
+            }
+            @include mq('m'){
+                margin-bottom:0;
+            }
             margin-bottom:30px;
         }
     }

@@ -1,6 +1,12 @@
 .main-navigation{
     background-color:#333645;
     position:relative;
+    @include mq('s'){
+        display:none;
+    }
+    @include mq('m'){
+        display:block;
+    }
     .sub-menu-banner-title{
         display:block;
     }

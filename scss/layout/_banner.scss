@@ -6,7 +6,11 @@
     & a{
         color:#fff;
         text-decoration:none;
-    }   
+        top:0;
+        margin-top:1.938rem;
+        margin-bottom:1.125rem;
+    }
+
     .content{
         margin-right:auto;
         margin-left:auto;
@@ -21,7 +25,7 @@
         .banner{
             &-header {
                 position: relative;
-                top: -500px;
+                //top: -500px;
                 right: 0;
                 bottom: 0;
                 left: 0;
@@ -49,16 +53,17 @@
                 }
                 @media only screen and (min-width: 1261px){
                     text-align: left;
-                    top: -490px;
+                    //top: -490px;
                 }
             }
             &-paragraph {
+                margin-top:0;
                 margin-bottom: .375rem;
                 font-size: 1.25rem;
                 line-height: 1.75rem;
                 font-weight: 600;
                 position: relative;
-                top: -530px;
+                //top: -530px;
                 right: 0;
                 bottom: 0;
                 left: 0;
@@ -82,24 +87,68 @@
                 }
                 @media only screen and (min-width: 1261px){
                     text-align: left;
-                    top: -490px;
+                    //top: -490px;
                 }
             }
+
             &-container{
+                position:relative;
                 display:flex;
                 flex-direction:column;
                 align-items:center;
+                top:-463px;
                 @include mq('m'){
+                    padding:2.55rem 15px;
+                    position:relative;
                     align-items: flex-start;
                 }
             }
         }
+
+        [data-slick-index="0"]{
+            .img-banner{
+                @include mq('m'){
+                    height:577px;
+                }
+                @include mq('l'){
+                    height:550px;
+                }
+                width:100.2vw;
+            }
+            .banner{
+                &-container{
+                    display:flex;
+                    flex-direction:column;
+                    align-items:center;
+                    top:-418px;
+                    @include mq('m'){
+                        padding:2.55rem 15px;
+                        position:relative;
+                        top:-557px;
+                        align-items: flex-start;
+                    }
+                    @include mq('l'){
+                        padding:2.55rem 15px;
+                        position:relative;
+                        top:-503px;
+                        align-items: flex-start;
+                    }
+                }
+            }
+        }
+
         .slick{
             &-dots{
                 display:flex;
                 justify-content:center;
                 overflow:hidden;
-                padding-bottom:50px;
+                padding-bottom:75px;
+                @include mq('m'){
+                    padding-bottom:50px;
+                }
+                @include mq('l'){
+                    padding-bottom:75px;
+                }
                 li{
                     & button:before{
                         color:white;
@@ -136,7 +185,8 @@
         justify-content:center;
         min-height:550px;
         width:110%;
-        height:100%;
+        height:550px;
+        transition: height 5s ease;
         @include mq('m'){
             height:550px;
         }
