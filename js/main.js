@@ -42,7 +42,7 @@ $(document).ready(function(){
         arrows:             false,
         dots:               false,
         autoplay:           true,
-        // autoplaySpeed:      30,
+        autoplaySpeed:      1,
         slidesToShow:       3,
         slidesToScroll:     1,
         infinite:           true,
