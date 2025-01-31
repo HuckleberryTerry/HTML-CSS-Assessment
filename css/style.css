@@ -2716,6 +2716,7 @@ h3 {
 
 .clients-banner {
   padding: 50px 0;
+  overflow-x: clip;
 }
 .clients-banner .client {
   display: flex;
