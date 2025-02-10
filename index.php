@@ -54,7 +54,7 @@
     <div class="container-body">
       <!-- HEADER -->
       <?php
-      include('php/header.php');
+      include('inc/header.php');
       ?>
       <div id="banner" class="home">
           <div class="content">
@@ -855,7 +855,7 @@
       </div>
 <!-- FOOTER -->
       <?php
-       include('php/footer.php');
+       include('inc/footer.php');
       ?>
     <div class="side-bar">
       <div class="main side-visible-xs side-visible-s">
