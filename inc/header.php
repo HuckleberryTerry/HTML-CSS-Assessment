@@ -21,7 +21,7 @@
                   </span>
                   Support
                 </a>
-                <a href="#" target="_blank" class="btn btn-default hidden-xs header-btn">
+                <a href="contact-us.php" target="_blank" class="btn btn-default hidden-xs header-btn">
                   <span class="icon-paperplane">
 
                   </span>

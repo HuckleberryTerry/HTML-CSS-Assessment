@@ -1,0 +1,34 @@
+#middle{
+    background-color:white;
+    .section{
+        padding-top:50px;
+        padding-bottom:50px;
+    }
+    .section,
+    .top{
+        padding-bottom:0;
+    }
+
+    .page-head:not(.bottom){
+        margin-bottom:50px;
+    }
+    .page-head{
+        background-color:#333645;
+        margin-top:-50px;
+        padding:24px 0;
+        .container{
+            & h1{
+                color:#fff;
+                max-width:750px;
+                margin:0;
+                font-size:2.25rem;
+                font-weight:400;
+            }
+        }
+    }
+
+    .office-addresses{
+        margin-bottom:40px;
+        
+    }
+}

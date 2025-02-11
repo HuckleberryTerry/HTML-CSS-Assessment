@@ -1,3 +1,9 @@
+.whitespace{
+    &>img{
+        height:100vh;
+    }
+}
+
 .clients-banner{
     padding:50px 0;
     overflow-x:clip;

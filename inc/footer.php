@@ -98,6 +98,5 @@ echo '<footer>
           </div>
           <!--This should contain the code for the footer bottom area with copyright information-->
         </div>
-      </div>
-    </div>';
+      </div>';
 ?>
