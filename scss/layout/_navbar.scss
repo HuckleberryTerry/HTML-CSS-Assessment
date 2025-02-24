@@ -108,6 +108,7 @@
             margin-top:7px;
             @include mq('m'){
                 margin-left:20px;
+                margin-bottom:0;
             }
         }
     }

@@ -63,4 +63,36 @@ a{
 label {
     font-weight: 600;
     color: #333645;
+    display:inline-block;
+    margin-bottom:5px;
+    & a{
+        text-decoration:underline;
+    }
+    &.required:after{
+        content:" *";
+        color:#d24d57;
+    }
+    &.pretty-checkbox{
+        line-height:32px;
+        cursor:pointer;
+        & .button{
+            display:inline-block;
+            border-radius:3px;
+            border:3px solid #333645;
+            height:32px;
+            width:32px;
+            position:relative;
+            margin-right:20px;
+            & [type=checkbox]{
+                display:none;
+            }
+            & span{
+                display:none;
+                line-height:26px;
+                text-align:center;
+                font-size:22px;
+                border-radius:50%;
+            }
+        }
+    }
 }

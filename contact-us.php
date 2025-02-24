@@ -1,15 +1,14 @@
 
 <html>
-    <body>
-        <?php
+    <?php
         require_once realpath(__DIR__ . "/vendor/autoload.php");
         use Dotenv\Dotenv;
         $dotenv = Dotenv::createImmutable(__DIR__);
         $dotenv->load();
         //include('inc/loadenv.php');
         include('inc/connection.php');
-        ?>
-        <head>
+    ?>
+    <head>
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -17,8 +16,8 @@
             <link rel="stylesheet" href="js/slick/slick.css">
             <link rel="stylesheet" href="js/slick/slick-theme.css">
             <link rel="stylesheet" href="css/style.css">
-        </head>
-
+    </head>
+    <body>
         <div class="cookie-policy">
         <div>
             <button type="button" class="btn-cookie-settings btn" onClick="openModal()">Manage Consent</button>
@@ -62,6 +61,17 @@
             ?>
             <div id="middle">
 
+                <div class="hidden-xs breadcrumb-container">
+                    <div class="container">
+                        <ul class="breadcrumb">
+                            <li>
+                                <a href="index.php">Home</a>
+                            </li>
+                            <li>Our Offices</li>
+                        </ul>
+                    </div>
+                </div>
+
                 <div class="section top">
                     <div class="page-head">
                         <div class="container">
@@ -77,11 +87,11 @@
                                 <div class="block address address-cambridge">
                                     <div class="image">
                                         <a href="#" target="_blank">
-                                            <img src="assets/images/200x50.png" alt="placeholder">
+                                            <img src="assets/images/Contact/cambridge.jpg" alt="placeholder" class="img-full">
                                         </a>
                                     </div>
                                     <div class="address-content-cambridge">
-                                        <p class="h1"><a href="#">Cambridge Office</a></p>
+                                        <p class="h2"><a href="#">Cambridge Office</a></p>
                                         <p class="p">
                                             Unit 1.31,
                                             <br>
@@ -104,11 +114,11 @@
                                 <div class="block address address-wymondham">
                                     <div class="image">
                                         <a href="#" target="_blank">
-                                            <img src="assets/images/200x50.png" alt="placeholder">
+                                            <img src="assets/images/Contact/wymondham.jpg" alt="placeholder" class="img-full">
                                         </a>
                                     </div>
                                     <div class="address-content-wymondham">
-                                    <p class="h1"><a href="#">Wymondham Office</a></p>
+                                    <p class="h2"><a href="#">Wymondham Office</a></p>
                                         <p class="p">
                                             Unit 15,
                                             <br>
@@ -130,11 +140,11 @@
                                 <div class="block address address-yarmouth">
                                     <div class="image">
                                         <a href="#" target="_blank">
-                                            <img src="assets/images/200x50.png" alt="placeholder">
+                                            <img src="assets/images/Contact/yarmouth-2.jpg" alt="placeholder" class="img-full">
                                         </a>
                                     </div>
                                     <div class="address-content-yarmouth">
-                                    <p class="h1"><a href="#">Great Yarmouth Office</a></p>
+                                    <p class="h2"><a href="#">Great Yarmouth Office</a></p>
                                         <p class="p">
                                             Suite F23,
                                             <br>
@@ -156,8 +166,11 @@
                     </div>
                 </div>
                 <div class="section bottom container">
+
                     <div class="row">
+
                         <div class="form-details">
+
                             <div>
                                 <div class="form-details-container">
                                     <p>
@@ -175,6 +188,7 @@
                                     </p>
                                 </div>
                             </div>
+
                             <div>
                                 <div class="form-details-container">
                                     <div class="sub-container">
@@ -184,7 +198,7 @@
                                                     <a href="#">
                                                         <p class="question-text">
                                                             Out of Hours IT Support 
-                                                            <em>v</em>
+                                                            <em class="icon-arrow-down2"></em>
                                                         </p>
                                                     </a>
                                                 </h4>
@@ -201,13 +215,14 @@
                                                     </p>
                                                 </div>
                                             </div>
-                                        <div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                         <div class="form-content">
-                            <form>
+                            <form id="contact-form">
                                 <div class="row">
                                     <div class="form-content-field">
                                         <div class="form-content-field--group">
@@ -227,7 +242,7 @@
                                     </div>
                                     <div class="form-content-field">
                                         <div class="form-content-field--group">
-                                            <label for="email">
+                                            <label for="email" class="required">
                                                 Your Email
                                             </label>
                                             <input class="form-control" name="email" type="email" value id="email">
@@ -246,14 +261,16 @@
                                     <label for="message" class="required">
                                         Message
                                     </label>
-                                    <textarea class="form-control" name="message" cols="50" rows="10" id="message">Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?</textarea>
+                                    <textarea class="form-control" name="message" cols="50" rows="10" id="message" maxlength="1000">Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?</textarea>
                                 </div>
                                 <div class="form-content-field--group">
                                     <label class="Pretty-checkbox">
                                         <span class="media">
                                             <span class="media-left checkbox-left">
                                                 <span class="button">
-                                                    <input type="checkbox" checked>
+                                                    <span class="checkbox-action">
+                                                        <input type="checkbox" checked>
+                                                    </span>
                                                 </span>
                                             </span>
                                             <span class="media-body">
@@ -274,8 +291,8 @@
                                     </span>
                                 </div>
                                 <div class="action-block">
-                                    <button class="btn btn-primary">Send Enquiry</button>
-                                    <small class="helper text">
+                                    <button class="btn btn-form">Send Enquiry</button>
+                                    <small class="helper-text">
                                         <span class="text-danger">
                                             *
                                         </span>
@@ -287,7 +304,6 @@
                     </div>
                 </div>
             </div>
-        </div>
             <?php
                 include('inc/footer.php');
             ?>
@@ -299,5 +315,6 @@
         <script src="js/jquery-3.7.1.min.js"></script>
         <script src="js/slick/slick.min.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/contact-form.js"></script>
     </body>
 </html>

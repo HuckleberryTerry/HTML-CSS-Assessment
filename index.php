@@ -5,6 +5,7 @@
   $dotenv = Dotenv::createImmutable(__DIR__);
   $dotenv->load();
   include('inc/connection.php');
+  include('inc/functions.php');
 ?>
 <html>
   <head>
@@ -485,99 +486,9 @@
                       <div class="row">
                         <div class="article-list-item">
 
-                          <div class="article-container">
-                            <div class="article-list-item bus-dev">
-                              <a class="article-link" href="#"></a>
-                              <div class="img-container">
-                                <a href="#" class="category btn-tooltip" title="View all: Business Development / Careers">Careers</a>
-                                <a class="img standard">
-                                  <img src="https://www.netmatters.co.uk/assets/images/thumbnails/thumb/business-development-executive-AIfQ.png" alt="An image displaying a blurred background with fore-text that says We Are Hiring: Business Development Executive">
-                                </a>
-                              </div>
-                              <div class="block">
-                                <h3>
-                                  <a href="#">Business Development Executive</a>
-                                </h3>
-                                <p>
-                                  Salary Range £26k-£36k per annum + Bonus Hours 40 hours per week, Monday – Friday  Location Wymondha...
-                                </p>
-                                <a class="btn btn-bus-dev" href="#">Read More</a>
-                                <div class="user">
-                                  <div class="avatar">
-                                    <img src="assets/images/Avatar-Placeholder.png" alt="an Avatar image">
-                                  </div>
-                                  <div class="details">
-                                    <strong class="text-primary">Posted by Rebecca Moore</strong>
-                                    <br>
-                                    18th October 2024
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="article-container">
-                            <div class="article-list-item digital">
-                              <a class="article-link" href="#"></a>
-                              <div class="img-container">
-                                <a href="#" class="category btn-tooltip" title="View all: Digital Marketing / Insights">Insights</a>
-                                <a class="img standard">
-                                  <img src="https://www.netmatters.co.uk/assets/images/thumbnails/thumb/why-should-i-P4Y2.png" alt="Why should I invest in content Marketing? How to set yourself apart, Online.">
-                                </a>
-                              </div>
-                              <div class="block">
-                                <h3>
-                                  <a href="#">Why Should I Invest in Content Marketing</a>
-                                </h3>
-                                <p>
-                                  It seems as though everyone is publishing articles these days, but is it worth it? Articles, blog po...
-                                </p>
-                                <a class="btn btn-digital" href="#">Read More</a>
-                                <div class="user">
-                                  <div class="avatar">
-                                    <img src="assets/images/Avatar-Placeholder.png" alt="an avatar image">
-                                  </div>
-                                  <div class="details">
-                                    <strong class="text-primary">Posted by Netmatters</strong>
-                                    <br>
-                                    16th October 2024
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="article-container">
-                            <div class="article-list-item web">
-                              <a class="article-link" href="#"></a>
-                              <div class="img-container">
-                                <a href="#" class="category btn-tooltip" title="View all: Web Design / News">News</a>
-                                <a class="img standard">
-                                  <img src="https://www.netmatters.co.uk/assets/images/thumbnails/thumb/september-notables-2024-ZBOM.png" alt="">
-                                </a>
-                              </div>
-                              <div class="block">
-                                <h3>
-                                  <a href="#">
-                                    September Notables 2024 - Celebrating Our Tea...
-                                  </a>
-                                </h3>
-                                <p>
-                                  September Notables 2024 Celebrating the achievements and dedication of our staff, at Netmatters, we...
-                                </p>
-                                <a class="btn btn-web" href="#">Read More</a>
-                                <div class="user">
-                                  <div class="avatar">
-                                    <img src="assets/images/Avatar-Placeholder.png" alt="an avatar image">
-                                  </div>
-                                  <div class="details">
-                                    <strong class="text-primary">Posted by Netmatters</strong>
-                                    <br>
-                                    10th October 2024
-                                  </div>
-                                </div>
-                            </div>
-                          </div>
+                          <?php
+                          get_news_cards(3);
+                          ?>
 
                         </div>
                       </div>
@@ -856,6 +767,7 @@
       </div>
       <?php
         include('inc/footer.php');
+
       ?>
     </div>
 <!-- FOOTER -->
